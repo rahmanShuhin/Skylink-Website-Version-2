@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Create Next App</title>
+                <title>SkyLink Creative | Web development Agency</title>
                 <meta name="description" content="SkyLink Creative" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

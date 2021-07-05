@@ -2,21 +2,17 @@
     height: 100%;
     min-height: 100vh;
     max-height: 100%;
-    box-shadow: 0 12px 21px #7889b6;
-    box-shadow: 0 12px 21px #7889b6;
-    background-color: #325add;
-    background-image: radial-gradient(
-        circle 920px at center,
-        #286dec 0,
-        #286dec 24%,
-        #2767e7 32%,
-        #244dd2 66%,
-        #244dd2 91%
-    );
     overflow: hidden;
-    z-index: 3;
-
-    &__content {
+    display: grid;
+    place-items: center;
+    position: relative;
+    #tsparticles {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+        width: 100%;
         background-image: radial-gradient(
             circle 920px at center,
             #286dec 0,
@@ -25,34 +21,39 @@
             #244dd2 66%,
             #244dd2 91%
         );
-
-        padding: 30px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 100;
-        > h2 {
-            font-size: 80px;
-            text-transform: uppercase;
-            color: $white;
-            letter-spacing: 5px;
-            font-family: "Bebas Neue", cursive;
-        }
-        > p {
-            max-width: 600px;
-            color: $white;
-            font-family: Open Sans, sans-serif;
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 1.7em;
-            word-spacing: 1px;
-            text-align: justify;
-            margin-top: 20px;
-        }
-        > button {
-            @include button-basic();
-            margin-top: 30px;
+        box-shadow: 0 12px 21px #7889b6;
+        z-index: -999;
+    }
+    &__content {
+        padding: 10px;
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        > div {
+            > h2 {
+                font-size: 80px;
+                text-transform: uppercase;
+                color: $white;
+                letter-spacing: 5px;
+                font-family: "Bebas Neue", cursive;
+                z-index: -1;
+            }
+            > p {
+                max-width: 600px;
+                color: $white;
+                font-family: Open Sans, sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 1.7em;
+                word-spacing: 1px;
+                text-align: justify;
+                margin-top: 20px;
+            }
+            > button {
+                @include button-basic();
+                margin-top: 30px;
+            }
         }
     }
 }
