@@ -20,7 +20,7 @@ const Landing = () => {
                 </div>
             </div>
             <MessengerCustomerChat
-                pageId="1940668112671890"
+                pageId="100508642002118"
                 appId="1404533659925082"
             />
         </div>
