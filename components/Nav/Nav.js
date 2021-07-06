@@ -2,6 +2,7 @@ import Link from "next/link";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Image from "next/image";
 import white_logo from "../../assets/images/white_logo.svg";
+
 import { useState } from "react";
 const Nav = () => {
     const [top, setTop] = useState(true);

@@ -1,6 +1,6 @@
 import Particle from "../Particle_Bg/Particle";
 import Image from "next/image";
-
+import MessengerCustomerChat from "react-messenger-customer-chat";
 const Landing = () => {
     return (
         <div className="hero">
@@ -19,6 +19,10 @@ const Landing = () => {
                     <button>Hire Us</button>
                 </div>
             </div>
+            <MessengerCustomerChat
+                pageId="1940668112671890"
+                appId="1404533659925082"
+            />
         </div>
     );
 };
