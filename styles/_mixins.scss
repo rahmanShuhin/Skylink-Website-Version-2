@@ -30,8 +30,8 @@ $breakpoints-down: (
 @mixin max-width {
     max-width: 1400px;
     margin: 0px auto;
-    @include breakpoints-down(medium) {
-        width: 95%;
+    @include breakpoints-down(large) {
+        width: 90%;
     }
 }
 

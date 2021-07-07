@@ -2,10 +2,10 @@ import Link from "next/link";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Image from "next/image";
 import white_logo from "../../assets/images/white_logo.svg";
-
-import { useState } from "react";
+import { useRef, useState } from "react";
 const Nav = () => {
     const [top, setTop] = useState(true);
+    const hamburgerRef = useRef();
     if (typeof window !== "undefined") {
         window.addEventListener("scroll", (event) => {
             var y = window.scrollY;
@@ -16,6 +16,11 @@ const Nav = () => {
             }
         });
     }
+    const handleBurger = () => {
+        hamburgerRef.current.classList.toggle("animate");
+        console.log(hamburgerRef.current);
+    };
+
     return (
         <nav className={top ? "nav" : "nav white__bg"}>
             <div>
@@ -33,6 +38,7 @@ const Nav = () => {
                         )}
                     </Link>
                 </div>
+                {/* nav menu for desktop */}
                 <div className="nav__right ">
                     <Link href="/home">Home</Link>
                     <span>
@@ -72,6 +78,10 @@ const Nav = () => {
                     </span>
                     <Link href="/home">About</Link>
                     <Link href="/home">Contact us</Link>
+                </div>
+                {/* mobile hamburger menu */}
+                <div className="menu-wrapper" onClick={handleBurger}>
+                    <div ref={hamburgerRef} className="hamburger-menu"></div>
                 </div>
             </div>
         </nav>
