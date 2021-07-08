@@ -6,10 +6,12 @@ import { useRef, useState } from "react";
 const Nav = () => {
     const [top, setTop] = useState(true);
     const hamburgerRef = useRef();
+    const navLinkRef = useRef();
     if (typeof window !== "undefined") {
         window.addEventListener("scroll", (event) => {
             var y = window.scrollY;
-            if (y > 0) {
+            var w = window.innerWidth;
+            if (y > 0 && w > 1023) {
                 setTop(false);
             } else {
                 setTop(true);
@@ -18,7 +20,7 @@ const Nav = () => {
     }
     const handleBurger = () => {
         hamburgerRef.current.classList.toggle("animate");
-        console.log(hamburgerRef.current);
+        navLinkRef.current.classList.toggle("hamburger__menu__active");
     };
 
     return (
@@ -39,10 +41,12 @@ const Nav = () => {
                     </Link>
                 </div>
                 {/* nav menu for desktop */}
-                <div className="nav__right ">
+                <div className="nav__right " ref={navLinkRef}>
                     <Link href="/home">Home</Link>
                     <span>
-                        Services <ExpandMoreIcon></ExpandMoreIcon>
+                        <p>
+                            Services <ExpandMoreIcon></ExpandMoreIcon>
+                        </p>
                         <ul>
                             <li>
                                 <Link href="/services/web-development/">
