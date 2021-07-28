@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Landing from "../components/Landing/Landing";
+import Services from "../components/Services/Services";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
 
             <main>
                 <Landing></Landing>
+                <Services></Services>
             </main>
         </div>
     );

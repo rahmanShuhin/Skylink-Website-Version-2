@@ -42,7 +42,7 @@ const Nav = () => {
                 </div>
                 {/* nav menu for desktop */}
                 <div className="nav__right " ref={navLinkRef}>
-                    <Link href="/home">Home</Link>
+                    <Link href="/">Home</Link>
                     <span>
                         <p>
                             Services <ExpandMoreIcon></ExpandMoreIcon>
