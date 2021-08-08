@@ -1,7 +1,17 @@
 import Particle from "../Particle_Bg/Particle";
 import Image from "next/image";
+import Lottie from "react-lottie";
+import * as animationData from "../../assets/lottie files/48945-launch.json";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 const Landing = () => {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice",
+        },
+    };
     return (
         <div className="hero">
             <Particle></Particle>
@@ -17,6 +27,9 @@ const Landing = () => {
                         the best way.
                     </p>
                     <button>Hire Us</button>
+                </div>
+                <div>
+                    <Lottie options={defaultOptions} height={600} width={600} />
                 </div>
             </div>
             <MessengerCustomerChat
