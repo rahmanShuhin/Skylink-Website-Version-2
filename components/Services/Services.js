@@ -1,7 +1,43 @@
+import { useState } from "react";
+import Lottie from "react-lottie";
+import * as animationData from "../../assets/lottie files/21699-3d-box-rotation.json";
 const Services = () => {
+    const [active, setActive] = useState(0);
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice",
+        },
+    };
     return (
         <div className="services">
             <h2>Services</h2>
+            <div className="services__for__big__screen">
+                <div className="services__left">
+                    {services.map((service, index) => (
+                        <div
+                            className={
+                                index === active
+                                    ? "services__left__card active"
+                                    : "services__left__card"
+                            }
+                            onClick={() => setActive(index)}
+                        >
+                            {service.name}
+                        </div>
+                    ))}
+                </div>
+                <div className="services__right">
+                    {services[active].category.map((catg) => (
+                        <div>{catg}</div>
+                    ))}
+                </div>
+            </div>
+            <div className="box__shape__anim">
+                <Lottie options={defaultOptions} width={350} />
+            </div>
         </div>
     );
 };
