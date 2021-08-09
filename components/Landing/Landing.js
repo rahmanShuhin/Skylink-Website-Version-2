@@ -15,6 +15,7 @@ const Landing = () => {
     return (
         <div className="hero">
             <Particle></Particle>
+
             <div className="hero__content">
                 <div>
                     <h2>Web Development Agency</h2>
@@ -32,6 +33,7 @@ const Landing = () => {
                     <Lottie options={defaultOptions} height={600} width={600} />
                 </div>
             </div>
+
             <MessengerCustomerChat
                 pageId="100508642002118"
                 appId="1404533659925082"

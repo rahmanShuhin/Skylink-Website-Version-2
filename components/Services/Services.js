@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Lottie from "react-lottie";
-import * as animationData from "../../assets/lottie files/21699-3d-box-rotation.json";
+import * as animationData from "../../assets/lottie files/37797-jumping-cube.json";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 const Services = () => {
     const [active, setActive] = useState(0);
