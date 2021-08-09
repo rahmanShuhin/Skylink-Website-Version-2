@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -19,7 +18,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -101,17 +100,17 @@ ul li {
 }
 
 .hero__content > div > h2 {
-  font-size: 80px;
+  font-weight: 700;
+  font-size: 50px;
   text-transform: uppercase;
   color: white;
-  letter-spacing: 5px;
-  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
   z-index: -1;
 }
 
 @media (max-width: 64em) {
   .hero__content > div > h2 {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
@@ -128,7 +127,7 @@ ul li {
 }
 
 .hero__content > div > button {
-  background-color: #d14728;
+  background-color: #ec4d29;
   color: white;
   padding: 15px 70px;
   border: none;
@@ -236,7 +235,7 @@ ul li {
   color: white;
   margin-left: 70px;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,7 +478,7 @@ ul li {
 .services {
   max-width: 1400px;
   margin: 0px auto;
-  padding: 100px 0px;
+  padding: 150px 0px;
   position: relative;
 }
 
@@ -494,7 +493,6 @@ ul li {
   font-size: 36px;
   letter-spacing: 0.02em;
   color: #1b2935;
-  font-family: BebasNeue, Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2em;
@@ -521,7 +519,7 @@ ul li {
 
 .services__left__card.active {
   cursor: pointer;
-  margin-left: 30px !important;
+  margin-left: 15px !important;
   background-color: #325add;
   color: white;
   z-index: -1;
@@ -554,6 +552,64 @@ ul li {
   position: absolute;
   bottom: 0px;
   right: 0px;
+}
+
+.services__right button {
+  background-color: #ec4d29;
+  color: white;
+  padding: 15px 70px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 10px 13px -7px #00000067;
+          box-shadow: 0px 10px 13px -7px #00000067;
+  border-radius: 50px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.services__right button:hover {
+  opacity: 0.8;
+}
+
+.services__right__lang {
+  margin: 30px 0px;
+}
+
+.services__right__lang > span {
+  color: #1b2935;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.services__right__lang > span:not(:last-child)::after {
+  content: " - ";
+}
+
+.services__right__catg {
+  padding: 10px 0px;
+}
+
+.services__right__catg > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 20px 0px;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  font-weight: 500;
+}
+
+.services__right__catg > p:hover {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .services__for__big__screen {

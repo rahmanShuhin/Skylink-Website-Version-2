@@ -80,6 +80,7 @@ const Nav = () => {
                             </li>
                         </ul>
                     </span>
+                    <Link href="/home">Our Works</Link>
                     <Link href="/home">About</Link>
                     <Link href="/home">Contact us</Link>
                 </div>

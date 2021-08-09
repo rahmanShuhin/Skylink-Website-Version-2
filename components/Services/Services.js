@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Lottie from "react-lottie";
 import * as animationData from "../../assets/lottie files/21699-3d-box-rotation.json";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 const Services = () => {
     const [active, setActive] = useState(0);
     const defaultOptions = {
@@ -30,9 +31,19 @@ const Services = () => {
                     ))}
                 </div>
                 <div className="services__right">
-                    {services[active].category.map((catg) => (
-                        <div>{catg}</div>
-                    ))}
+                    <div className="services__right__lang">
+                        {services[active].languages.map((lang) => (
+                            <span>{lang}</span>
+                        ))}
+                    </div>
+                    <div className="services__right__catg">
+                        {services[active].category.map((catg) => (
+                            <p>
+                                <ArrowForwardIcon></ArrowForwardIcon> {catg}
+                            </p>
+                        ))}
+                    </div>
+                    <button>Read More</button>
                 </div>
             </div>
             <div className="box__shape__anim">
