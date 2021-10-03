@@ -289,7 +289,7 @@ ul li {
   position: absolute;
   display: none;
   background-color: white;
-  top: 65px;
+  top: 70px;
   left: -100px;
   width: 400px;
   z-index: 100 !important;
@@ -447,7 +447,7 @@ ul li {
     -webkit-transition: all 1s;
     transition: all 1s;
   }
-  .white__bg .nav__right > a,
+  .white__bg .nav__right > a:not(:last-child),
   .white__bg .nav__right span {
     color: black !important;
   }

@@ -82,7 +82,7 @@ const Nav = () => {
                     </span>
                     <Link href="/home">Our Works</Link>
                     <Link href="/home">About</Link>
-                    <Link href="/home">Contact us</Link>
+                    <Link href="/home">Contact</Link>
                 </div>
                 {/* mobile hamburger menu */}
                 <div className="menu-wrapper" onClick={handleBurger}>

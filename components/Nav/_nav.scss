@@ -58,6 +58,7 @@
                 font-size: 25px;
             }
         }
+
         span {
             position: relative;
             cursor: pointer;
@@ -75,7 +76,7 @@
                 position: absolute;
                 display: none;
                 background-color: $white;
-                top: 65px;
+                top: 70px;
                 left: -100px;
                 width: 400px;
                 z-index: 100 !important;
@@ -215,7 +216,7 @@
         box-shadow: 0 12px 21px #7889b6;
         transition: all 1s;
         .nav__right {
-            > a,
+            > a:not(:last-child),
             span {
                 color: black !important;
             }

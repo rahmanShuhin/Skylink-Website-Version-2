@@ -19,6 +19,7 @@ const Services = () => {
                 <div className="services__left">
                     {services.map((service, index) => (
                         <div
+                            key={index}
                             className={
                                 index === active
                                     ? "services__left__card active"
@@ -32,13 +33,13 @@ const Services = () => {
                 </div>
                 <div className="services__right">
                     <div className="services__right__lang">
-                        {services[active].languages.map((lang) => (
-                            <span>{lang}</span>
+                        {services[active].languages.map((lang, index) => (
+                            <span key={index}>{lang}</span>
                         ))}
                     </div>
                     <div className="services__right__catg">
-                        {services[active].category.map((catg) => (
-                            <p>
+                        {services[active].category.map((catg, index) => (
+                            <p key={index}>
                                 <ArrowForwardIcon></ArrowForwardIcon> {catg}
                             </p>
                         ))}
