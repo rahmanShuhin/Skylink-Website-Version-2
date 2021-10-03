@@ -635,9 +635,9 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 39.9375em) {
@@ -808,6 +808,70 @@ ul li {
   .card_face_four {
     margin: 16px;
     height: 90%;
+  }
+}
+
+.team_head h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  color: #1b2935;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.team_head p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 40em) {
+  .team_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 40em) {
+  .team_box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 21%;
+            flex: 1 0 21%;
+    margin: 10px;
+  }
+}
+
+.team_box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.team_box p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.team_name {
+  font-size: 20px !important;
+}
+
+@media (max-width: 64em) {
+  .team_skill {
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=App.css.map */
