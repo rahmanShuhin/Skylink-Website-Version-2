@@ -15,7 +15,6 @@ const Landing = () => {
     return (
         <div className="hero">
             <Particle></Particle>
-
             <div className="hero__content">
                 <div>
                     <h2>Web Development Agency</h2>

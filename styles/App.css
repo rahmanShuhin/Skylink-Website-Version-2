@@ -811,6 +811,17 @@ ul li {
   }
 }
 
+.team {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+@media (max-width: 87.4375em) {
+  .team {
+    width: 90%;
+  }
+}
+
 .team_head h2 {
   text-transform: uppercase;
   font-size: 36px;
