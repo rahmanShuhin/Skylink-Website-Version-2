@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
 import Landing from "../components/Landing/Landing";
 import Services from "../components/Services/Services";
+import Team from "../components/Team/Team";
 
 export default function Home() {
     return (
@@ -17,6 +19,8 @@ export default function Home() {
                 <Landing></Landing>
                 <Services></Services>
                 <About></About>
+                <Team></Team>
+                <Contact></Contact>
             </main>
         </div>
     );
