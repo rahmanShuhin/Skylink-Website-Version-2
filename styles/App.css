@@ -976,4 +976,136 @@ ul li {
 .field_btn:hover {
   background-color: #27ae60;
 }
+
+.footer {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: #212529;
+  overflow-x: hidden;
+}
+
+@media (min-width: 40em) {
+  .footer {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 64em) {
+  .footer {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .footer {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer_item {
+  max-width: 1400px;
+  margin: 0px auto;
+  padding: 3rem;
+}
+
+@media (max-width: 87.4375em) {
+  .footer_item {
+    width: 90%;
+  }
+}
+
+.footer_item h2 {
+  color: #b5b5b5;
+  font-size: 40px;
+  margin-bottom: 20px !important;
+  font-weight: 400;
+  line-height: 49px;
+}
+
+.footer_item p {
+  text-align: justify;
+  max-width: 400px;
+  color: #f5f5f5;
+  font-size: 16px;
+}
+
+@media (max-width: 64em) {
+  .footer_item {
+    width: 57%;
+    padding: 1%;
+  }
+}
+
+.footer_input {
+  width: 359px;
+  height: 37px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ffffff;
+  outline: none;
+  color: black;
+  border-radius: 2px;
+}
+
+@media (max-width: 64em) {
+  .footer_input {
+    width: 100%;
+  }
+}
+
+.footer_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 64em) {
+  .footer_link {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.footer_link_items {
+  padding-left: 12px;
+}
+
+@media (max-width: 64em) {
+  .footer_link_items {
+    padding: 10px 0px;
+  }
+}
+
+.btn {
+  width: 50%;
+  padding: 0.7rem 1rem;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #27ae60;
+}
+
+@media (max-width: 64em) {
+  .btn {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=App.css.map */
