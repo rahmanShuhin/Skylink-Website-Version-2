@@ -54,27 +54,27 @@ const Nav = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/web-development/">
+                                <Link href="/services/wordpress/">
                                     WordPress Website
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/web-development/">
+                                <Link href="/services/ui-ux/">
                                     UI/UX Design
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/web-development/">
+                                <Link href="/services/affiliate-marketing/">
                                     Affiliate Website
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/web-development/">
+                                <Link href="/services/seo/">
                                     Search Engine Optimization (SEO)
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/web-development/">
+                                <Link href="/services/content/">
                                     Content Writing
                                 </Link>
                             </li>
