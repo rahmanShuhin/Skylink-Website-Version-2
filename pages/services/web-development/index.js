@@ -1,8 +1,17 @@
+import Head from "next/head";
+import WebDev from "../../../components/WebDev/WebDev";
+
 const index = () => {
     return (
         <div>
-            {/* this page for tushar */}
-            <h1>custom website</h1>
+            <Head>
+                <title>SkyLink Creative | Web development Agency</title>
+                <meta name="description" content="SkyLink Creative" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <main>
+                <WebDev></WebDev>
+            </main>
         </div>
     );
 };
