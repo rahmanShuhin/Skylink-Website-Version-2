@@ -1175,4 +1175,26 @@ ul li {
 .seoHero > div:nth-of-type(1) > div button:hover {
   opacity: 0.8;
 }
+
+.ui {
+  background: #22c1c3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), to(#4f28ac));
+  background: linear-gradient(0deg, #22c1c3 0%, #4f28ac 100%);
+  min-height: 100vh;
+}
+
+.ui_design {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ui_design > div {
+  padding: 10px;
+}
+
+.ui_service {
+  text-align: center;
+}
 /*# sourceMappingURL=App.css.map */
