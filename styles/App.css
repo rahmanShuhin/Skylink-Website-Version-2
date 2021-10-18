@@ -1199,6 +1199,7 @@ ul li {
 }
 
 .ui_service h1 {
+  margin-bottom: 50px;
   color: white;
 }
 
@@ -1298,6 +1299,12 @@ ul li {
 
 .design_tool {
   margin-top: 70px;
+}
+
+.design_tool h1 {
+  font-size: 40px;
+  margin-right: 500px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .design_tool > div {
