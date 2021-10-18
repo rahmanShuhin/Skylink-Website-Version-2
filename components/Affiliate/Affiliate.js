@@ -7,6 +7,7 @@ import content from '../../assets/images/content.png';
 import response from '../../assets/images/response.png'
 import setup from '../../assets/images/setup.png'
 import support from '../../assets/images/support.png';
+import success from '../../assets/images/sucesss.png';
 
 
 const Affiliate = () => {
@@ -71,8 +72,8 @@ const Affiliate = () => {
       {
         data.map(x => (
           <div className="affiliate-service-container">
-            <div className="affiliate-service" key={x.id}>
-              <div className="affiliate-service-img" data-aos="fade-up">
+            <div className="affiliate-service" data-aos="fade-up" key={x.id}>
+              <div className="affiliate-service-img">
                 <Image src={x.img} />
               </div>
               <div className="affiliate-service-text">
@@ -83,6 +84,25 @@ const Affiliate = () => {
           </div>
         ))
       }
+      </div>
+
+      <div className="affiliate-success">
+        <div>
+          <div>
+            <h1>OUR SUCCESS GUARANTEE</h1>
+            <b>We are confident in the performance of our sites, our training program and the abilities of our clients!</b>
+            <p>
+            The HPD formula has proven to be successful time and time again with hundreds of our clients.  That’s why we want to continue on with our mission and help reduce the risk of starting an online business with the only success guarantee in the industry!
+            </p>
+            <p>
+            <b> How Does It Work? </b> If, after 12 months, you’ve decided not to continue with your site, we will purchase it back or sell it for you on our site!  It’s that quick and easy.
+            </p>
+            <button className="affiliate-read-more">Read More</button>
+          </div>
+          <div className="affiliate-success-img">
+            <Image src={success} alt="" />
+          </div>
+        </div>
       </div>
 
     </div>
