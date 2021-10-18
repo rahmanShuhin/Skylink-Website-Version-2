@@ -1,0 +1,20 @@
+.ui {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(79, 40, 172, 1) 100%
+  );
+  min-height: 100vh;
+  &_design {
+    padding-top: 150px;
+    display: flex;
+
+    > div {
+      padding: 10px;
+    }
+  }
+  &_service {
+    text-align: center;
+  }
+}
