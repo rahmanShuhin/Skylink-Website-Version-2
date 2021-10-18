@@ -1,6 +1,8 @@
 import Lottie from "react-lottie";
 import * as animationData from "../../assets/lottie files/74387-uiux.json";
 import DesignCard from "./DesignCard/DesignCard";
+import DesignTool from "./DesignTool/DesignTool";
+import MidFooter from "./MidFooter/MidFooter";
 // import DesignCard from './DesignCard';
 const UiHome = () => {
   const defaultOptions = {
@@ -39,9 +41,14 @@ const UiHome = () => {
               <h1>OUR UI AND UX DESIGN SERVICES AND CAPABILITIES</h1>
         <div className='design'>
         
-              <DesignCard/>
+          <DesignCard />
+          
+          <MidFooter />
+          
+          <DesignTool/>
              </div>
           </div>
+      
     </div>
   );
 };

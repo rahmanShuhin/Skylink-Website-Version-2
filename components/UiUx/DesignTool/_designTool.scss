@@ -1,0 +1,12 @@
+.design_tool {
+  margin-top: 70px;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

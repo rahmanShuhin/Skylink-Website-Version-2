@@ -1,11 +1,19 @@
 .ui {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(79, 40, 172, 1) 100%
+  // background: rgb(34, 193, 195);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(34, 193, 195, 1) 0%,
+  //   rgba(79, 40, 172, 1) 100%
+  // );
+  background-image: radial-gradient(
+    circle 920px at center,
+    #286dec 0,
+    #286dec 24%,
+    #2767e7 32%,
+    #244dd2 66%,
+    #244dd2 91%
   );
-  min-height: 200vh;
+  min-height: 300vh;
   &_design {
     padding-top: 150px;
     display: flex;
@@ -17,7 +25,7 @@
   &_service {
     text-align: center;
     padding: 10px;
-
+    margin-bottom: 200px;
     h1 {
       color: white;
     }
