@@ -1,6 +1,7 @@
 import Lottie from "react-lottie";
-import * as mobile from "../../assets/lottie files/34375-mobile-application.json";
 import * as animationData from "../../assets/lottie files/74387-uiux.json";
+import DesignCard from "./DesignCard/DesignCard";
+// import DesignCard from './DesignCard';
 const UiHome = () => {
   const defaultOptions = {
     loop: true,
@@ -10,14 +11,7 @@ const UiHome = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
     };
-    const defaultOptionsMobile = {
-        loop: true,
-        autoplay: true,
-        mobile: mobile,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice",
-        },
-      };
+   
   return (
     <div className="ui">
       <div className="ui_design">
@@ -43,18 +37,10 @@ const UiHome = () => {
           </div>
           <div className='ui_service'>
               <h1>OUR UI AND UX DESIGN SERVICES AND CAPABILITIES</h1>
-              <div className="col-md-3">
-         
-              </div>
-              <div className="col-md-3">
-       
-              </div>
-              <div className="col-md-3">
+        <div className='design'>
         
-              </div>
-              <div className="col-md-3">
-          
-              </div>
+              <DesignCard/>
+             </div>
           </div>
     </div>
   );

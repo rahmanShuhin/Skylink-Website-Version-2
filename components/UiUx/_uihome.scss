@@ -5,7 +5,7 @@
     rgba(34, 193, 195, 1) 0%,
     rgba(79, 40, 172, 1) 100%
   );
-  min-height: 100vh;
+  min-height: 200vh;
   &_design {
     padding-top: 150px;
     display: flex;
@@ -16,5 +16,10 @@
   }
   &_service {
     text-align: center;
+    padding: 10px;
+
+    h1 {
+      color: white;
+    }
   }
 }
