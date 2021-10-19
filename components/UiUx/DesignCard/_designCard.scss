@@ -1,0 +1,11 @@
+.designCard {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 10px;
+
+  .cardMedia {
+    width: 140px;
+    margin-left: 80px;
+  }
+}
