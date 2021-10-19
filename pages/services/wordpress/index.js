@@ -2,7 +2,7 @@ const index = () => {
     return (
         <div>
             {/* for rafi */}
-            <h2>Wordpress</h2>
+            <h2>i am working on it</h2>
         </div>
     );
 };
