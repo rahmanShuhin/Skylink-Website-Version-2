@@ -1,0 +1,26 @@
+.ui_approach {
+  // &_item {
+  //   margin-bottom: 0.5em;
+  // }
+  > div {
+    margin-left: 50px;
+    display: flex;
+    img {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      margin: 50px;
+    }
+    p {
+      font-size: 30px;
+      color: "black";
+    }
+  }
+  h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    margin-right: 710px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}

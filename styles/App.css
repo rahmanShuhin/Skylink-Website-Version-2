@@ -1178,7 +1178,7 @@ ul li {
 
 .ui {
   background-image: radial-gradient(circle 920px at center, #286dec 0, #286dec 24%, #2767e7 32%, #244dd2 66%, #244dd2 91%);
-  min-height: 300vh;
+  min-height: 50vh;
 }
 
 .ui_design {
@@ -1195,12 +1195,13 @@ ul li {
 .ui_service {
   text-align: center;
   padding: 10px;
-  margin-bottom: 200px;
 }
 
 .ui_service h1 {
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-bottom: 50px;
-  color: white;
+  color: black;
 }
 
 .designCard {
@@ -1320,5 +1321,31 @@ ul li {
 .design_tool > div img {
   width: 100px;
   height: 100px;
+}
+
+.ui_approach > div {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ui_approach > div img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.ui_approach > div p {
+  font-size: 30px;
+  color: "black";
+}
+
+.ui_approach h1 {
+  margin-top: 50px;
+  font-size: 40px;
+  margin-right: 710px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 /*# sourceMappingURL=App.css.map */

@@ -13,7 +13,7 @@
     #244dd2 66%,
     #244dd2 91%
   );
-  min-height: 300vh;
+  min-height: 50vh;
   &_design {
     padding-top: 150px;
     display: flex;
@@ -24,11 +24,15 @@
   }
   &_service {
     text-align: center;
+
     padding: 10px;
-    margin-bottom: 200px;
+    // margin-bottom: 200px;
     h1 {
+      font-weight: bold;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       margin-bottom: 50px;
-      color: white;
+      color: black;
     }
   }
 }
