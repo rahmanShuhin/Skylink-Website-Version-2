@@ -5,6 +5,8 @@
   //   rgba(34, 193, 195, 1) 0%,
   //   rgba(79, 40, 172, 1) 100%
   // );
+  position: relative;
+  box-shadow: 0 12px 21px #7889b6;
   background-image: radial-gradient(
     circle 920px at center,
     #286dec 0,
@@ -13,7 +15,7 @@
     #244dd2 66%,
     #244dd2 91%
   );
-  min-height: 50vh;
+  min-height: 100vh;
   &_design {
     padding-top: 150px;
     display: flex;
