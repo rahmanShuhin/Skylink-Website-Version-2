@@ -2075,7 +2075,8 @@ ul li {
 
 .ui_approach > div p {
   font-size: 30px;
-  color: "black";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #de5630;
 }
 
 .ui_approach h1 {
@@ -2093,6 +2094,29 @@ ul li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px;
+}
+
+.designCard .card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.designCard .card .paragraph {
+  color: #9780d2;
+}
+
+.designCard .card:hover {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #b95ce4, #4f29c2);
+  color: white;
+}
+
+.designCard .card:hover .paragraph:hover {
+  color: #7ebdc6;
 }
 
 .designCard .cardMedia {

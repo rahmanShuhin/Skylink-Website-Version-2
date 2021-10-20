@@ -9,7 +9,7 @@ import * as React from 'react';
 const DesignCard = () => {
     return (
         <div className='designCard'>
-          <Card sx={{ maxWidth: 280 }} className='col-md-3'>
+          <Card sx={{ maxWidth: 280 }} className=' card col-md-3'>
       <CardActionArea>
         <CardMedia className='cardMedia'
           component="img"
@@ -20,8 +20,9 @@ const DesignCard = () => {
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
           Mobile App design
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
+              </Typography>
+              {/* color="text.secondary" */}
+          <Typography variant="body2"  className='paragraph'>
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </Typography>
@@ -30,7 +31,7 @@ const DesignCard = () => {
             </Card>
             
             {/* card 2 */}
-            <Card sx={{ maxWidth:280 }} className='col-md-3'>
+            <Card sx={{ maxWidth:280 }} className= ' card col-md-3'>
       <CardActionArea>
         <CardMedia className='cardMedia'
           component="img"
@@ -41,8 +42,9 @@ const DesignCard = () => {
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
            UiUx design
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
+              </Typography>
+              {/* color="text.secondary" */}
+          <Typography variant="body2"  className='paragraph'>
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </Typography>
@@ -52,7 +54,7 @@ const DesignCard = () => {
             
             {/* card 3 */}
 
-            <Card sx={{ maxWidth: 280 }} className='col-md-3'>
+            <Card sx={{ maxWidth: 280 }} className=' card col-md-3'>
       <CardActionArea>
         <CardMedia className='cardMedia'
           component="img"
@@ -63,8 +65,9 @@ const DesignCard = () => {
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Web design
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
+              </Typography>
+            {/* color="text.secondary" */}
+          <Typography variant="body2"  className='paragraph'>
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </Typography>
@@ -72,7 +75,7 @@ const DesignCard = () => {
       </CardActionArea>
             </Card>
             {/* card 4 */}
-            <Card sx={{ maxWidth: 280 }} className='col-md-3'>
+            <Card sx={{ maxWidth: 280 }} className=' card col-md-3'>
       <CardActionArea>
         <CardMedia className='cardMedia'
           component="img"
@@ -84,7 +87,7 @@ const DesignCard = () => {
           <Typography gutterBottom variant="h5" component="div">
             Graphic design
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2"  className='paragraph'>
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </Typography>
