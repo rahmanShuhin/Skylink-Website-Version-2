@@ -986,7 +986,7 @@ ul li {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 1rem;
-  background-color: #212529;
+  background: #111;
   overflow-x: hidden;
 }
 
@@ -1015,6 +1015,7 @@ ul li {
   max-width: 1400px;
   margin: 0px auto;
   padding: 3rem;
+  width: 40%;
 }
 
 @media (max-width: 87.4375em) {
@@ -1024,18 +1025,27 @@ ul li {
 }
 
 .footer_item h2 {
-  color: #b5b5b5;
-  font-size: 40px;
-  margin-bottom: 20px !important;
-  font-weight: 400;
-  line-height: 49px;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer_item h2:before {
+  content: " ";
+  bottom: -5px;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
 }
 
 .footer_item p {
-  text-align: justify;
-  max-width: 400px;
-  color: #f5f5f5;
+  color: #999;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 64em) {
@@ -1043,6 +1053,24 @@ ul li {
     width: 57%;
     padding: 1%;
   }
+}
+
+.footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+}
+
+.footer_list li a {
+  color: #fff;
+}
+
+.footer_list li a :hover {
+  background: #f00;
 }
 
 .footer_input {
@@ -1062,6 +1090,14 @@ ul li {
   }
 }
 
+.footer_info li {
+  cursor: pointer;
+}
+
+.footer_info li :hover {
+  color: white;
+}
+
 .footer_link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1076,13 +1112,17 @@ ul li {
 }
 
 .footer_link_items {
-  padding-left: 12px;
+  cursor: pointer;
 }
 
-@media (max-width: 64em) {
-  .footer_link_items {
-    padding: 10px 0px;
-  }
+.footer_link_items :hover {
+  color: white;
+}
+
+.footer_ground {
+  color: white;
+  text-align: center;
+  margin-left: 300px;
 }
 
 .btn {
@@ -1096,8 +1136,8 @@ ul li {
   border-radius: 20px;
   margin-top: 20px;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   text-transform: uppercase;
 }
 
