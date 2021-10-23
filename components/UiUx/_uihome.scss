@@ -21,7 +21,7 @@
     display: flex;
 
     > div {
-      padding: 10px;
+      padding: 30px;
     }
     button {
       @include button-basic();
