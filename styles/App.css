@@ -1117,38 +1117,7 @@ ul li {
 
 .footer_link_items :hover {
   color: white;
-}
-
-.footer_ground {
-  color: white;
-  text-align: center;
-  margin-left: 300px;
-}
-
-.btn {
-  width: 50%;
-  padding: 0.7rem 1rem;
-  background-color: #2ecc71;
-  color: #fff;
-  font-size: 1.1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  margin-top: 20px;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  text-transform: uppercase;
-}
-
-.btn:hover {
-  background-color: #27ae60;
-}
-
-@media (max-width: 64em) {
-  .btn {
-    width: 100%;
-  }
+  text-decoration: underline;
 }
 
 .seoHero {
