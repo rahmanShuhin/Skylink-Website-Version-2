@@ -28,7 +28,7 @@ const Landing = () => {
                     </p>
                     <button>Hire Us</button>
                 </div>
-                <div>
+                <div className="lottie__file">
                     <Lottie options={defaultOptions} height={600} width={600} />
                 </div>
             </div>
