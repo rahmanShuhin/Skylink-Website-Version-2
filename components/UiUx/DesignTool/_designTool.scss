@@ -1,0 +1,21 @@
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.design_tool {
+  margin-top: 70px;
+
+  h1 {
+    font-size: 40px;
+    margin-right: 500px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

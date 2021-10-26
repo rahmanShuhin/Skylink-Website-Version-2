@@ -1,9 +1,19 @@
 .ui {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(79, 40, 172, 1) 100%
+  // background: rgb(34, 193, 195);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(34, 193, 195, 1) 0%,
+  //   rgba(79, 40, 172, 1) 100%
+  // );
+  position: relative;
+  box-shadow: 0 12px 21px #7889b6;
+  background-image: radial-gradient(
+    circle 920px at center,
+    #286dec 0,
+    #286dec 24%,
+    #2767e7 32%,
+    #244dd2 66%,
+    #244dd2 91%
   );
   min-height: 100vh;
   &_design {
@@ -11,10 +21,23 @@
     display: flex;
 
     > div {
-      padding: 10px;
+      padding: 30px;
+    }
+    button {
+      @include button-basic();
     }
   }
   &_service {
     text-align: center;
+
+    padding: 10px;
+    // margin-bottom: 200px;
+    h1 {
+      font-weight: bold;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin-bottom: 50px;
+      color: black;
+    }
   }
 }

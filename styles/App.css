@@ -986,7 +986,7 @@ ul li {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 1rem;
-  background-color: #212529;
+  background: #111;
   overflow-x: hidden;
 }
 
@@ -1015,6 +1015,7 @@ ul li {
   max-width: 1400px;
   margin: 0px auto;
   padding: 3rem;
+  width: 40%;
 }
 
 @media (max-width: 87.4375em) {
@@ -1024,18 +1025,27 @@ ul li {
 }
 
 .footer_item h2 {
-  color: #b5b5b5;
-  font-size: 40px;
-  margin-bottom: 20px !important;
-  font-weight: 400;
-  line-height: 49px;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer_item h2:before {
+  content: " ";
+  bottom: -5px;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
 }
 
 .footer_item p {
-  text-align: justify;
-  max-width: 400px;
-  color: #f5f5f5;
+  color: #999;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 64em) {
@@ -1043,6 +1053,24 @@ ul li {
     width: 57%;
     padding: 1%;
   }
+}
+
+.footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+}
+
+.footer_list li a {
+  color: #fff;
+}
+
+.footer_list li a :hover {
+  background: #f00;
 }
 
 .footer_input {
@@ -1062,6 +1090,14 @@ ul li {
   }
 }
 
+.footer_info li {
+  cursor: pointer;
+}
+
+.footer_info li :hover {
+  color: white;
+}
+
 .footer_link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1076,39 +1112,12 @@ ul li {
 }
 
 .footer_link_items {
-  padding-left: 12px;
-}
-
-@media (max-width: 64em) {
-  .footer_link_items {
-    padding: 10px 0px;
-  }
-}
-
-.btn {
-  width: 50%;
-  padding: 0.7rem 1rem;
-  background-color: #2ecc71;
-  color: #fff;
-  font-size: 1.1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  margin-top: 20px;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
-  text-transform: uppercase;
 }
 
-.btn:hover {
-  background-color: #27ae60;
-}
-
-@media (max-width: 64em) {
-  .btn {
-    width: 100%;
-  }
+.footer_link_items :hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .seoHero {
@@ -2069,5 +2078,223 @@ ul li {
 .customize-service > h5 {
   color: #2d87ce;
 
+}
+
+.ui {
+  position: relative;
+  -webkit-box-shadow: 0 12px 21px #7889b6;
+          box-shadow: 0 12px 21px #7889b6;
+  background-image: radial-gradient(circle 920px at center, #286dec 0, #286dec 24%, #2767e7 32%, #244dd2 66%, #244dd2 91%);
+  min-height: 100vh;
+}
+
+.ui_design {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ui_design > div {
+  padding: 30px;
+}
+
+.ui_design button {
+  background-color: #ec4d29;
+  color: white;
+  padding: 15px 70px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 10px 13px -7px #00000067;
+          box-shadow: 0px 10px 13px -7px #00000067;
+  border-radius: 50px;
+  outline: none;
+}
+
+.ui_design button:hover {
+  opacity: 0.8;
+}
+
+.ui_service {
+  text-align: center;
+  padding: 10px;
+}
+
+.ui_service h1 {
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 50px;
+  color: black;
+}
+
+.ui_approach > div {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ui_approach > div img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.ui_approach > div p {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #de5630;
+}
+
+.ui_approach h1 {
+  margin-top: 50px;
+  font-size: 40px;
+  margin-right: 710px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.designCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.designCard .card {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+
+.designCard .card .paragraph {
+  color: #9780d2;
+}
+
+.designCard .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(45deg, #b95ce4, #4f29c2);
+  color: white;
+}
+
+.designCard .card:hover .paragraph:hover {
+  color: #7ebdc6;
+}
+
+.designCard .cardMedia {
+  width: 140px;
+  margin-left: 80px;
+}
+
+.design_tool {
+  margin-top: 70px;
+}
+
+.design_tool h1 {
+  font-size: 40px;
+  margin-right: 500px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.design_tool > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px;
+}
+
+.design_tool > div img {
+  width: 100px;
+  height: 100px;
+}
+
+.mid_footer {
+  margin-top: 50px;
+  background: #3cd5af;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.mid_footer p {
+  border-left: 3px solid #4979ff;
+  font-size: 17px;
+  color: white;
+}
+
+.mid_footer button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+          box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.mid_footer .button:hover,
+.mid_footer .button:focus {
+  background-color: #fb8332;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.mid_footer .button:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.mid_footer .button:active {
+  background-color: #c85000;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 /*# sourceMappingURL=App.css.map */
