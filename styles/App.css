@@ -2020,6 +2020,64 @@ ul li {
     display: grid;
     width: 100%;
   }
+
+}
+
+.top-banner {
+  background-image: url("https://webdevstudios.com/wp-content/uploads/2017/01/WDS8-Services_Header-Wordpress.png");
+  height: 90vh;
+  background-position: center;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-banner > h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  padding: 10px;
+}
+
+.top-banner > p {
+  text-align: center;
+  font-size: 1.525rem;
+  color: white;
+}
+
+.customize-service {
+  background-color: #f4f8f9;
+  height: 50vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.customize-service > h2 {
+  padding: 20px;
+}
+
+.customize-service > h5 {
+  color: #2d87ce;
+
 }
 
 .ui {
