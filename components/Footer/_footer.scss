@@ -41,7 +41,7 @@
 
     p {
       color: #999;
-
+      text-align: justify;
       font-size: 16px;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -83,6 +83,7 @@
 
   &_info {
     li {
+      text-align: justify;
       cursor: pointer;
       :hover {
         color: white;
