@@ -1,86 +1,96 @@
 .footer {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  background: #111;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background: #111;
+    padding: 50px 0px;
+    overflow-x: hidden;
 
-  overflow-x: hidden;
-
-  @include breakpoints-up(medium) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include breakpoints-down(medium) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  @include breakpoints-up(large) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  &_item {
-    @include max-width;
-    padding: 3rem;
-    width: 40%;
-    h2 {
-      position: relative;
-      color: #fff;
-      font-weight: 500;
-      margin-bottom: 15px;
-      font-family: "Times New Roman", Times, serif;
+    @include breakpoints-up(medium) {
+        grid-template-columns: repeat(2, 1fr);
     }
-    h2:before {
-      content: " ";
-      bottom: -5px;
-
-      position: absolute;
-      left: 0;
-      width: 50px;
-      height: 2px;
-      background: #f00;
+    @include breakpoints-down(medium) {
+        grid-template-columns: repeat(1, 1fr);
     }
 
+    @include breakpoints-up(large) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &_item {
+        @include max-width;
+        padding: 3rem;
+        width: 40%;
+        h2 {
+            position: relative;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 15px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h2:before {
+            content: " ";
+            bottom: -5px;
+
+<<<<<<< HEAD
     p {
       color: #999;
       text-align: justify;
       font-size: 16px;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
-
-    @include breakpoints-down(medium) {
-      width: 57%;
-      padding: 1%;
-    }
-  }
-
-  &_list {
-    display: flex;
-
-    justify-content: space-between;
-    margin-top: 12px;
-    li {
-      a {
-        color: #fff;
-        :hover {
-          background: #f00;
+=======
+            position: absolute;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #f00;
         }
-      }
-    }
-  }
-  &_input {
-    width: 359px;
-    height: 37px;
-    padding: 10px;
-    background: white;
-    border: 1px solid #ffffff;
-    outline: none;
-    color: black;
-    border-radius: 2px;
 
-    @include breakpoints-down(medium) {
-      width: 100%;
-    }
-  }
+        p {
+            color: #999;
+>>>>>>> 440c19a7a9ac5d86655909e38c585058bbd190a6
 
+            font-size: 16px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @include breakpoints-down(medium) {
+            width: 57%;
+            padding: 1%;
+        }
+    }
+
+    &_list {
+        display: flex;
+
+        justify-content: space-between;
+        margin-top: 12px;
+        li {
+            a {
+                color: #fff;
+                :hover {
+                    background: #f00;
+                }
+            }
+        }
+    }
+    &_input {
+        width: 359px;
+        height: 37px;
+        padding: 10px;
+        background: white;
+        border: 1px solid #ffffff;
+        outline: none;
+        color: black;
+        border-radius: 2px;
+
+        @include breakpoints-down(medium) {
+            width: 100%;
+        }
+    }
+
+<<<<<<< HEAD
   &_info {
     li {
       text-align: justify;
@@ -88,22 +98,30 @@
       :hover {
         color: white;
       }
+=======
+    &_info {
+        li {
+            cursor: pointer;
+            :hover {
+                color: white;
+            }
+        }
+>>>>>>> 440c19a7a9ac5d86655909e38c585058bbd190a6
     }
-  }
 
-  &_link {
-    display: flex;
+    &_link {
+        display: flex;
 
-    @include breakpoints-down(medium) {
-      display: grid;
+        @include breakpoints-down(medium) {
+            display: grid;
+        }
+
+        &_items {
+            cursor: pointer;
+            :hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
     }
-
-    &_items {
-      cursor: pointer;
-      :hover {
-        color: white;
-        text-decoration: underline;
-      }
-    }
-  }
 }

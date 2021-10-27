@@ -90,7 +90,7 @@
 
     .box__shape__anim {
         position: absolute;
-        bottom: 0px;
+        bottom: 0%;
         right: 0px;
     }
     &__right {
@@ -131,4 +131,7 @@
 .services__for__big__screen {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include breakpoints-down(medium) {
+        grid-template-columns: 1fr;
+    }
 }

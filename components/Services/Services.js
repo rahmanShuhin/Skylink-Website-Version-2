@@ -47,7 +47,7 @@ const Services = () => {
                     <button>Read More</button>
                 </div>
             </div>
-            <div className="box__shape__anim">
+            <div className="box__shape__anim lottie__file">
                 <Lottie options={defaultOptions} width={350} />
             </div>
         </div>

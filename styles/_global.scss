@@ -25,3 +25,20 @@ a {
 ul li {
     list-style: none;
 }
+
+.lottie__file {
+    @include breakpoints-down(small) {
+        display: none;
+    }
+
+    @include breakpoints-down(medium) {
+        svg {
+            width: 60vw !important;
+        }
+    }
+    @include breakpoints-down(small) {
+        svg {
+            display: none;
+        }
+    }
+}
