@@ -1116,8 +1116,8 @@ ul li {
 }
 
 .footer_info li {
-  text-align: justify;
   cursor: pointer;
+  text-align: justify;
 }
 
 .footer_info li :hover {
