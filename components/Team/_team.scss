@@ -1,6 +1,6 @@
 .team {
-    @include max-width();
     &_head {
+          @include max-width();
         h2 {
             text-transform: uppercase;
             font-size: 36px;

@@ -4,6 +4,7 @@
 
     &_container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
 
         @include breakpoints-down(small) {
@@ -18,7 +19,6 @@
 
         @include breakpoints-up(medium) {
             display: flex;
-            justify-content: space-evenly;
         }
     }
     h2 {
