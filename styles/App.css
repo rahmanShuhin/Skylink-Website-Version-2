@@ -1698,8 +1698,22 @@ ul li {
 
 .we-do {
   margin-top: 100px;
-  margin-left: 60px;
+  padding-left: 35px;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .we-do {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .we-do {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
 }
 
 .we-do h1 {
@@ -1735,8 +1749,8 @@ ul li {
 }
 
 .affiliate-service-text {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
 }
 
 .affiliate-service-img {
@@ -1769,6 +1783,7 @@ ul li {
   -webkit-transition: 0.3s,border-radius 0.3s,opacity 0.3s;
   transition: 0.3s,border-radius 0.3s,opacity 0.3s;
   padding-top: 70px;
+  padding-left: 40px;
   padding-bottom: 70px;
 }
 
