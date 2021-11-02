@@ -131,8 +131,6 @@
     font-size: 18px;
   }
 }
-
-
 .we-do{
   margin-top: 100px;
   margin-left: 60px;
@@ -145,7 +143,6 @@
     font-size: 50px;
     line-height: 48px;
 }
-
 .affiliate-service{
   width: 100%;
   display: flex;
@@ -320,15 +317,28 @@
 
 .we-do{
   margin-top: 100px;
-  margin-left: 60px;
+  padding-left: 35px;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 768px) {
+  .we-do{
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .we-do{
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+}
 .we-do h1{
-    color: #074792;
-    font-family: "Vesper Libre", Open sans, Sans-serif;
-    margin-bottom: 40px;
-    font-size: 50px;
-    line-height: 48px;
+  
+  color: #074792;
+  font-family: "Vesper Libre", Open sans, Sans-serif;
+  margin-bottom: 40px;
+  font-size: 50px;
+  line-height: 48px;
 }
 
 .affiliate-service{
@@ -345,7 +355,7 @@
   flex-basis: 25%;
 }
 .affiliate-service-text{
-  flex-basis: 60%;
+  flex-basis: 65%;
 }
  .affiliate-service-img {
   height: auto;
@@ -375,6 +385,7 @@
     opacity: 1;
     transition:  0.3s,border-radius 0.3s,opacity 0.3s;
   padding-top: 70px;
+  padding-left: 40px;
   padding-bottom: 70px;
   > div {
     @include max-width;
