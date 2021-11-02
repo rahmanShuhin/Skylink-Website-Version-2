@@ -20,11 +20,11 @@ const UiHome = () => {
       <div className="ui">
         <div className="ui_design">
           <div className="col-md-4">
-            <h1 style={{ color: "white", fontSize: "50px" }}>
+            <h1>
               UI AND UX DESIGN SERVICES
             </h1>
             <br />
-            <h4 style={{ color: "#D8D4E2 " }}>
+            <h4>
               Want to build your product with a team that establishes a clear
               design process, meets deadlines, and delivers a spot-on end
               result? Turn to Intellectsoft’s UI and UX services. Our design
@@ -35,12 +35,12 @@ const UiHome = () => {
             <button>Start a Conversation</button>
           </div>
 
-          <div className="col-md-8">
-            <Lottie
+          <div className="col-md-8 lottie">
+            <Lottie 
               options={defaultOptions}
               style={{ marginBottom: "150px" }}
-              height={600}
-              width={600}
+              height={550}
+              width={550}
             />
           </div>
         </div>
