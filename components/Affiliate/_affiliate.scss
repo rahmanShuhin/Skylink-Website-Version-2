@@ -1,173 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500;700&display=swap');
-.affiliate{
-  background-image: radial-gradient(
-    circle 820px at center,
-    #5d5dec 0,
-    #5d5dec 24%,
-    #5b5be7 32%,
-    #4c4cc2 91%,
-    #4a4abc 100%
-  );
-  padding-top: 120px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  > div {
-    @include max-width;
-    color: white;
-  }
-  > div:nth-of-type(1) {
-    display: grid;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-  > div {
-      p {
-        &:nth-of-type(1) {
-          max-width: 700px;
-          margin: 20px 0px;
-          font-size: 16px;
-        }
-      }
-  h1 {
-    font-size: 52px;
-    font-family: "Raleway",source sans pro;
-    letter-spacing: 1px;
-    line-height: 120%;
-
-   @include breakpoints-down(medium){
-      margin-top: 70px;
-      font-size: 36px;
-      line-height: 120%;
-      text-align: center;
-   }
-  }
-  button {
-    @include button-basic();
+@import url("https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500;700&display=swap");
+.affiliate {
+    background-image: radial-gradient(
+        circle 820px at center,
+        #5d5dec 0,
+        #5d5dec 24%,
+        #5b5be7 32%,
+        #4c4cc2 91%,
+        #4a4abc 100%
+    );
+    padding-top: 120px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    > div {
+        @include max-width;
+        color: white;
     }
-  }
- iframe{
-   border-radius: 10px;
- }
-  @include breakpoints-down(medium){
-    display: flex;
-    flex-wrap: wrap;
-  }
- }
+    > div:nth-of-type(1) {
+        display: grid;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        > div {
+            p {
+                &:nth-of-type(1) {
+                    max-width: 700px;
+                    margin: 20px 0px;
+                    font-size: 16px;
+                    line-height: 160%;
+                }
+            }
+            h1 {
+                font-size: 52px;
+                font-family: "Raleway", source sans pro;
+                letter-spacing: 1px;
+                line-height: 120%;
+
+                @include breakpoints-down(medium) {
+                    margin-top: 70px;
+                    font-size: 36px;
+                    line-height: 120%;
+                    text-align: center;
+                }
+            }
+            button {
+                @include button-basic();
+            }
+        }
+        iframe {
+            border-radius: 10px;
+        }
+        @include breakpoints-down(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 }
 @media only screen and (max-width: 1024px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 800px;
-    height: 400px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 800px;
+        height: 400px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 768px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 700px;
-    height: 400px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 700px;
+        height: 400px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 550px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 420px;
-    height: 320px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 420px;
+        height: 320px;
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 350px;
-    height: 230px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 350px;
+        height: 230px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 360px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 330px;
-    height: 200px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 330px;
+        height: 200px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 320px) {
-  iframe{
-    width: 260px;
-    height: 170px;
-    margin-top: 40px;
-  }
+    iframe {
+        width: 260px;
+        height: 170px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 280px) {
-  iframe{
-    width: 270px;
-    height: 170px;
-    margin-top: 40px;
-  }
-  h1{
-    font-size: 30px;
-  }
-  p{
-    font-size: 18px;
-  }
+    iframe {
+        width: 270px;
+        height: 170px;
+        margin-top: 40px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
 }
-.we-do{
-  margin-top: 100px;
-  margin-left: 60px;
-  margin-bottom: 50px;
+.what-we-do {
+    @include max-width();
 }
-.we-do h1{
+.we-do {
+    margin-top: 100px;
+
+    margin-bottom: 50px;
+}
+.we-do h1 {
     color: #074792;
     font-family: "Vesper Libre", Open sans, Sans-serif;
     margin-bottom: 40px;
     font-size: 50px;
     line-height: 48px;
 }
-.affiliate-service{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.affiliate-service {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.affiliate-service:last-child{
-  margin-bottom: 30px;
+.affiliate-service:last-child {
+    margin-bottom: 30px;
 }
-.affiliate-service-img{
-  flex-basis: 25%;
+.affiliate-service-img {
+    flex-basis: 25%;
 }
-.affiliate-service-text{
-  flex-basis: 60%;
+.affiliate-service-text {
+    flex-basis: 60%;
 }
- .affiliate-service-img {
-  height: auto;
-  max-width: 100%;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  margin-right: 30px;
+.affiliate-service-img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-right: 30px;
 }
-.affiliate-service-text h2{
+.affiliate-service-text h2 {
     color: #074792;
     font-family: "Vesper Libre", Open sans, Sans-serif;
     font-size: 35px;
@@ -175,197 +179,195 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .affiliate-service-text{
-    margin-top: 50px;
-  }
+    .affiliate-service-text {
+        margin-top: 50px;
+    }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500;700&display=swap');
-.affiliate{
-  background-image: radial-gradient(
-    circle 820px at center,
-    #5d5dec 0,
-    #5d5dec 24%,
-    #5b5be7 32%,
-    #4c4cc2 91%,
-    #4a4abc 100%
-  );
-  padding-top: 120px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  > div {
-    @include max-width;
-    color: white;
-  }
-  > div:nth-of-type(1) {
-    display: grid;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-  > div {
-      p {
-        &:nth-of-type(1) {
-          max-width: 700px;
-          margin: 20px 0px;
-          font-size: 16px;
-        }
-      }
-  h1 {
-    font-size: 52px;
-    font-family: "Raleway",source sans pro;
-    letter-spacing: 1px;
-    line-height: 120%;
-
-   @include breakpoints-down(medium){
-      margin-top: 70px;
-      font-size: 36px;
-      line-height: 120%;
-      text-align: center;
-   }
-  }
-  button {
-    @include button-basic();
+@import url("https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500;700&display=swap");
+.affiliate {
+    background-image: radial-gradient(
+        circle 820px at center,
+        #5d5dec 0,
+        #5d5dec 24%,
+        #5b5be7 32%,
+        #4c4cc2 91%,
+        #4a4abc 100%
+    );
+    padding-top: 120px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    > div {
+        @include max-width;
+        color: white;
     }
-  }
- iframe{
-   border-radius: 10px;
- }
-  @include breakpoints-down(medium){
-    display: flex;
-    flex-wrap: wrap;
-  }
- }
+    > div:nth-of-type(1) {
+        display: grid;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        > div {
+            p {
+                &:nth-of-type(1) {
+                    max-width: 700px;
+                    margin: 20px 0px;
+                    font-size: 16px;
+                }
+            }
+            h1 {
+                font-size: 52px;
+                font-family: "Raleway", source sans pro;
+                letter-spacing: 1px;
+                line-height: 120%;
+
+                @include breakpoints-down(medium) {
+                    margin-top: 70px;
+                    font-size: 36px;
+                    line-height: 120%;
+                    text-align: center;
+                }
+            }
+            button {
+                @include button-basic();
+            }
+        }
+        iframe {
+            border-radius: 10px;
+        }
+        @include breakpoints-down(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 }
 @media only screen and (max-width: 1024px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 800px;
-    height: 400px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 800px;
+        height: 400px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 768px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 700px;
-    height: 400px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 700px;
+        height: 400px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 550px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 420px;
-    height: 320px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 420px;
+        height: 320px;
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 350px;
-    height: 230px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 350px;
+        height: 230px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 360px) {
-  .affiliate{
-    padding-top: 90px;
-    padding-left: 0;
-  }
-  iframe{
-    width: 330px;
-    height: 200px;
-    margin-top: 40px;
-  }
+    .affiliate {
+        padding-top: 90px;
+        padding-left: 0;
+    }
+    iframe {
+        width: 330px;
+        height: 200px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 320px) {
-  iframe{
-    width: 260px;
-    height: 170px;
-    margin-top: 40px;
-  }
+    iframe {
+        width: 260px;
+        height: 170px;
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 280px) {
-  iframe{
-    width: 270px;
-    height: 170px;
-    margin-top: 40px;
-  }
-  h1{
-    font-size: 30px;
-  }
-  p{
-    font-size: 18px;
-  }
+    iframe {
+        width: 270px;
+        height: 170px;
+        margin-top: 40px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
 }
 
-
-.we-do{
-  margin-top: 100px;
-  padding-left: 35px;
-  margin-bottom: 50px;
+.we-do {
+    margin-top: 100px;
+    padding-left: 35px;
+    margin-bottom: 50px;
 }
 @media only screen and (max-width: 768px) {
-  .we-do{
-    padding-left: 20px;
-    margin-left: 20px;
-  }
+    .we-do {
+        padding-left: 20px;
+        margin-left: 20px;
+    }
 }
 @media only screen and (max-width: 550px) {
-  .we-do{
-    padding-left: 10px;
-    margin-left: 10px;
-  }
+    .we-do {
+        padding-left: 10px;
+        margin-left: 10px;
+    }
 }
-.we-do h1{
-  
-  color: #074792;
-  font-family: "Vesper Libre", Open sans, Sans-serif;
-  margin-bottom: 40px;
-  font-size: 50px;
-  line-height: 48px;
+.we-do h1 {
+    color: #074792;
+    font-family: "Vesper Libre", Open sans, Sans-serif;
+    margin-bottom: 40px;
+    font-size: 50px;
+    line-height: 48px;
 }
 
-.affiliate-service{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.affiliate-service {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.affiliate-service:last-child{
-  margin-bottom: 30px;
+.affiliate-service:last-child {
+    margin-bottom: 30px;
 }
-.affiliate-service-img{
-  flex-basis: 25%;
+.affiliate-service-img {
+    flex-basis: 25%;
 }
-.affiliate-service-text{
-  flex-basis: 65%;
+.affiliate-service-text {
+    flex-basis: 65%;
 }
- .affiliate-service-img {
-  height: auto;
-  max-width: 100%;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  margin-right: 30px;
+.affiliate-service-img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-right: 30px;
 }
-.affiliate-service-text h2{
+.affiliate-service-text h2 {
     color: #074792;
     font-family: "Vesper Libre", Open sans, Sans-serif;
     font-size: 35px;
@@ -373,76 +375,79 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .affiliate-service-text{
-    margin-top: 50px;
-  }
+    .affiliate-service-text {
+        margin-top: 50px;
+    }
 }
 
-.affiliate-success{
-  background-color: transparent;
+.affiliate-success {
+    background-color: transparent;
     background-image: linear-gradient(
-320deg,rgba(255,255,255,.01) 39%,#27ABE1 100%);
+        320deg,
+        rgba(255, 255, 255, 0.01) 39%,
+        #27abe1 100%
+    );
     opacity: 1;
-    transition:  0.3s,border-radius 0.3s,opacity 0.3s;
-  padding-top: 70px;
-  padding-left: 40px;
-  padding-bottom: 70px;
-  > div {
-    @include max-width;
-    color: white;
-  }
-  > div:nth-of-type(1) {
-    display: grid;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-  > div {
-    b{
-      color: #000;
+    transition: 0.3s, border-radius 0.3s, opacity 0.3s;
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-bottom: 70px;
+    > div {
+        @include max-width;
+        color: white;
     }
-      p {
-        color: #000;
-        &:nth-of-type(1) {
-          max-width: 700px;
-          margin: 20px 0px;
-          font-size: 16px;
-        }
-      }
-  h1 {
-    margin-top: 50px;
-    font-size: 36px;
-    line-height: 120%;
-    margin-bottom: 30px;
+    > div:nth-of-type(1) {
+        display: grid;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        > div {
+            b {
+                color: #000;
+            }
+            p {
+                color: #000;
+                &:nth-of-type(1) {
+                    max-width: 700px;
+                    margin: 20px 0px;
+                    font-size: 16px;
+                }
+            }
+            h1 {
+                margin-top: 50px;
+                font-size: 36px;
+                line-height: 120%;
+                margin-bottom: 30px;
 
-   @include breakpoints-down(medium){
-      margin-top: 70px;
-      font-size: 36px;
-      line-height: 120%;
-      text-align: center;
-   }
-  }
-  .affiliate-read-more {
-    margin-top: 50px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .4px;
-    fill: #FFF;
-    color: #FFF;
-    background-color: #27ABE1;
-    border-radius: 50px;
-    padding: 20px 45px 22px 45px;
-    border: none;
+                @include breakpoints-down(medium) {
+                    margin-top: 70px;
+                    font-size: 36px;
+                    line-height: 120%;
+                    text-align: center;
+                }
+            }
+            .affiliate-read-more {
+                margin-top: 50px;
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                fill: #fff;
+                color: #fff;
+                background-color: #27abe1;
+                border-radius: 50px;
+                padding: 20px 45px 22px 45px;
+                border: none;
+            }
+        }
+        .affiliate-success-img {
+            padding-left: 120px;
+        }
+
+        @include breakpoints-down(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
-  }
-  .affiliate-success-img{
-    padding-left: 120px;
-  }
- 
-  @include breakpoints-down(medium){
-    display: flex;
-    flex-wrap: wrap;
-  }
- }
 }

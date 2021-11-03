@@ -1,6 +1,10 @@
 .about {
     @include max-width;
     position: relative;
+    padding: 120px 0px 100px 0px;
+    @include breakpoints-down(medium) {
+        padding: 50px 0px;
+    }
 
     &_container {
         display: flex;
@@ -29,7 +33,7 @@
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1.2em;
-        text-align: center;
+
         margin-bottom: 50px;
     }
     h3 {

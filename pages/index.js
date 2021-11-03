@@ -3,6 +3,7 @@ import Image from "next/image";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Landing from "../components/Landing/Landing";
+import OurWorks from "../components/OurWorks/OurWorks";
 import Services from "../components/Services/Services";
 import Team from "../components/Team/Team";
 
@@ -17,8 +18,9 @@ export default function Home() {
 
             <main>
                 <Landing></Landing>
-                <Services></Services>
                 <About></About>
+                <Services></Services>
+                <OurWorks></OurWorks>
                 <Team></Team>
                 <Contact></Contact>
             </main>
