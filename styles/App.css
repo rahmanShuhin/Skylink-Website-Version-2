@@ -2011,7 +2011,6 @@ ul li {
     display: grid;
     width: 100%;
   }
-
 }
 
 .top-banner {
@@ -2097,13 +2096,7 @@ ul li {
   color: #5a5a59;
 }
 
-<<<<<<< HEAD
 .content h2 {
   margin-bottom: 10px;
-=======
-.customize-service > h5 {
-  color: #2d87ce;
-
->>>>>>> 6b055f31f1dc0aed871b198f02b835a8178c37de
 }
 /*# sourceMappingURL=App.css.map */
