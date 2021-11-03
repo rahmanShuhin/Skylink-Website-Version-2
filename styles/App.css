@@ -2541,6 +2541,19 @@ ul li {
   gap: 50px;
 }
 
+@media (max-width: 39.9375em) {
+  .ourWorks > div > div:nth-of-type(2) {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 64em) {
+  .ourWorks > div > div:nth-of-type(2) {
+    gap: 10px;
+  }
+}
+
 .ourWorks > div > div:nth-of-type(2) > div {
   background-color: white;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

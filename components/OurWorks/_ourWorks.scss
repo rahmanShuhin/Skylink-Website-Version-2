@@ -21,6 +21,12 @@
         > div:nth-of-type(2) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            @include breakpoints-down(small) {
+                grid-template-columns: 1fr;
+            }
+            @include breakpoints-down(medium) {
+                gap: 10px;
+            }
             gap: 50px;
             > div {
                 background-color: white;
