@@ -2016,10 +2016,9 @@ ul li {
 .top-banner {
   background-image: url("https://webdevstudios.com/wp-content/uploads/2017/01/WDS8-Services_Header-Wordpress.png");
   height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  padding-top: 120px;
-  padding-bottom: 50px;
-  padding-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2045,10 +2044,35 @@ ul li {
   color: white;
 }
 
-.customize-service {
-  background-color: #f4f8f9;
-  height: 50vh;
+.container {
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container > div {
+  width: 90vw;
+}
+
+.container > div > h1 {
   text-align: center;
+  color: #5a5a5a;
+  padding-top: 50px;
+  font-size: 3.5rem;
+}
+
+.container > div > h3 {
+  margin-top: 20px;
+  color: #5a5a5a;
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.service-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2059,13 +2083,20 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.customize-service > h2 {
+  margin: 0 auto;
+  width: 50vw;
   padding: 20px;
 }
 
-.customize-service > h5 {
-  color: #2d87ce;
+.icon {
+  padding: 0 10px;
+}
+
+.content {
+  color: #5a5a59;
+}
+
+.content h2 {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=App.css.map */
