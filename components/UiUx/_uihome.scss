@@ -1,20 +1,85 @@
 .ui {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(79, 40, 172, 1) 100%
+  // background: rgb(34, 193, 195);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(34, 193, 195, 1) 0%,
+  //   rgba(79, 40, 172, 1) 100%
+  // );
+
+  position: relative;
+  box-shadow: 0 12px 21px #7889b6;
+  background-image: radial-gradient(
+    circle 920px at center,
+    #286dec 0,
+    #286dec 24%,
+    #2767e7 32%,
+    #244dd2 66%,
+    #244dd2 91%
   );
   min-height: 100vh;
   &_design {
+    @include breakpoints-down(small) {
+      display: grid;
+      width: 20px;
+      height: 20px;
+    }
     padding-top: 150px;
     display: flex;
 
-    > div {
-      padding: 10px;
+    h1 {
+      font-size: 50px;
+      color: white;
     }
+
+    h4 {
+      color: #d8d4e2;
+      text-align: justify;
+    }
+
+    > div {
+      padding: 30px;
+    }
+    button {
+      @include button-basic();
+    }
+    // .lottie {
+    //   height: 600px;
+    //   width: 600px;
+    // }
   }
+
   &_service {
     text-align: center;
+
+    padding: 10px;
+    // margin-bottom: 200px;
+    h1 {
+      font-weight: bold;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin-bottom: 50px;
+      color: black;
+    }
+  }
+}
+
+// @media query...
+@media (max-width: 700px) {
+  .ui_design {
+    h1 {
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 10px;
+      text-decoration: justify;
+    }
+  }
+  .ui {
+    .lottie {
+      width: 20px;
+      height: 20px;
+      margin-right: 50px;
+      margin-bottom: 20px;
+    }
   }
 }
