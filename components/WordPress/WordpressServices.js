@@ -1,6 +1,8 @@
 import React from 'react';
+import { BsImages } from 'react-icons/bs';
+import { FaHandshake } from 'react-icons/fa';
 import { FiEdit } from 'react-icons/fi';
-
+import { GiPencilRuler } from 'react-icons/gi';
 
 const WordpressServices = () => {
     return (
@@ -18,9 +20,10 @@ const WordpressServices = () => {
                             <p>At FreshySites, we pride our WordPress website design company on beautiful and intelligent WordPress web design services. In today’s increasingly competitive online marketplace, it is not enough to have a website. You need an intelligently designed website that makes it easy for your customers to find what they need and make a purchase or schedule an appointment online. You need a WordPress agency in your corner, dedicated to you and the success of your business.</p>
                         </div>
                     </div>
+                    
                     <div style={{display:'flex', padding:10}}>
                         <div className= 'icon'>
-                            <FiEdit style={{fontSize:'2rem', color:'#dbe442'}}/>
+                            <BsImages style={{fontSize:'2rem', color:'#dbe442'}}/>
                         </div>
                         <div className='content'>
                             <h2>Helping clients with WordPress web design services</h2>
@@ -29,7 +32,7 @@ const WordpressServices = () => {
                     </div>
                     <div style={{display:'flex', padding:10}}>
                         <div className= 'icon'>
-                            <FiEdit style={{fontSize:'2rem', color:'#dbe442'}}/>
+                            <GiPencilRuler style={{fontSize:'2rem', color:'#dbe442'}}/>
                         </div>
                         <div className='content'>
                             <h2>What is WordPress website design?</h2>
@@ -38,7 +41,7 @@ const WordpressServices = () => {
                     </div>
                     <div style={{display:'flex', padding:10}}>
                         <div className= 'icon'>
-                            <FiEdit style={{fontSize:'2rem', color:'#dbe442'}}/>
+                            <FaHandshake style={{fontSize:'2rem', color:'#dbe442'}}/>
                         </div>
                         <div className='content'>
                             <h2>We do more than just basic WordPress web design</h2>
