@@ -42,7 +42,7 @@ const Team = () => {
         },
     ];
     return (
-        <div className="team container">
+        <div className="team ">
             <div className="team_head">
                 <h2>Our team</h2>
                 <p>We communicate, create, develop and love what we do!</p>
