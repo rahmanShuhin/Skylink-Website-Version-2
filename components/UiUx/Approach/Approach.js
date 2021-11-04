@@ -7,9 +7,9 @@ import * as React from "react";
 
 const Approach = () => {
   return (
-    <div className="ui_approach ">
+    <div className="approach ">
       <h1>Our approach</h1>
-      <div className="ui_item ">
+      <div className="approach_item ">
         <Card sx={{ maxWidth: 345 }} className=" card col-md-4">
           <CardActionArea>
             <CardMedia
