@@ -1,9 +1,14 @@
 .about {
     @include max-width;
     position: relative;
+    padding: 120px 0px 100px 0px;
+    @include breakpoints-down(medium) {
+        padding: 50px 0px;
+    }
 
     &_container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
 
         @include breakpoints-down(small) {
@@ -18,7 +23,6 @@
 
         @include breakpoints-up(medium) {
             display: flex;
-            justify-content: space-evenly;
         }
     }
     h2 {
@@ -29,7 +33,7 @@
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1.2em;
-        text-align: center;
+
         margin-bottom: 50px;
     }
     h3 {

@@ -1,109 +1,114 @@
 .footer {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  background: #111;
-  padding: 50px 0px;
-  overflow-x: hidden;
-
-  @include breakpoints-up(medium) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include breakpoints-down(medium) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  @include breakpoints-up(large) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  &_item {
-    @include max-width;
-    padding: 3rem;
-    width: 40%;
-    h2 {
-      position: relative;
-      color: #fff;
-      font-weight: 500;
-      margin-bottom: 15px;
-      font-family: "Times New Roman", Times, serif;
-    }
-    h2:before {
-      content: " ";
-      bottom: -5px;
-
-      position: absolute;
-      left: 0;
-      width: 50px;
-      height: 2px;
-      background: #f00;
-    }
-
-    p {
-      color: #999;
-      text-align: justify;
-      font-size: 16px;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    background: #111;
+    padding: 50px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
     @include breakpoints-down(medium) {
-      width: 57%;
-      padding: 1%;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
     }
-  }
-
-  &_list {
-    display: flex;
-
-    justify-content: space-between;
-    margin-top: 12px;
-    li {
-      a {
-        color: #fff;
-        :hover {
-          background: #f00;
+    @include breakpoints-down(small) {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+    }
+    &_item {
+        width: 100%;
+        h2 {
+            position: relative;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 15px;
+            font-family: "Times New Roman", Times, serif;
         }
-      }
-    }
-  }
-  &_input {
-    width: 359px;
-    height: 37px;
-    padding: 10px;
-    background: white;
-    border: 1px solid #ffffff;
-    outline: none;
-    color: black;
-    border-radius: 2px;
+        h2:before {
+            content: " ";
+            bottom: -5px;
 
-    @include breakpoints-down(medium) {
-      width: 100%;
-    }
-  }
+            position: absolute;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: $button-color;
+        }
 
-  &_info {
-    li {
-      cursor: pointer;
-      text-align: justify;
-      :hover {
-        color: white;
-      }
-    }
-  }
-
-  &_link {
-    display: flex;
-
-    @include breakpoints-down(medium) {
-      display: grid;
+        p {
+            max-width: 400px;
+            @include breakpoints-down(small) {
+                max-width: 100%;
+            }
+            color: #999;
+            text-align: justify;
+            font-size: 16px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
     }
 
-    &_items {
-      cursor: pointer;
-      :hover {
-        color: white;
-        text-decoration: underline;
-      }
+    &_list {
+        display: flex;
+        margin-top: 50px;
+        li {
+            a {
+                color: #fff;
+                margin-right: 20px;
+
+                :hover {
+                    background: $button-color;
+                }
+            }
+        }
     }
-  }
+    &_input {
+        width: 359px;
+        height: 37px;
+        padding: 10px;
+        background: white;
+        border: 1px solid #ffffff;
+        outline: none;
+        color: black;
+        border-radius: 2px;
+
+        @include breakpoints-down(medium) {
+            width: 100%;
+        }
+    }
+
+    &_info {
+        li {
+            cursor: pointer;
+            text-align: justify;
+
+            > p {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                svg {
+                    margin-right: 10px;
+                }
+            }
+            :hover {
+                color: white;
+            }
+        }
+    }
+
+    &_link {
+        display: flex;
+
+        @include breakpoints-down(medium) {
+            display: grid;
+        }
+
+        &_items {
+            cursor: pointer;
+            > p {
+                margin-bottom: 10px;
+            }
+            :hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
 }

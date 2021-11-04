@@ -17,7 +17,17 @@ const Landing = () => {
             <Particle></Particle>
             <div className="hero__content">
                 <div>
-                    <h2>Web Development Agency</h2>
+                    <h2>
+                        Grow your business with{" "}
+                        <span
+                            style={{
+                                color: "#de5630",
+                                padding: "10px",
+                            }}
+                        >
+                            SKYLINK CREATIVE
+                        </span>{" "}
+                    </h2>
                     <p>
                         F5 Studio is a web development agency. Our experienced
                         web designers, UX/UI specialists, web developers, SEOs,
