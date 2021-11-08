@@ -2031,6 +2031,13 @@ ul li {
           justify-content: center;
 }
 
+@media (max-width: 39.9375em) {
+  .top-banner {
+    padding-top: 30px;
+    height: 100vh;
+  }
+}
+
 .top-banner > h1 {
   text-align: center;
   font-size: 2rem;
@@ -2038,10 +2045,22 @@ ul li {
   padding: 10px;
 }
 
+@media (max-width: 39.9375em) {
+  .top-banner > h1 {
+    font-size: 1.525rem;
+  }
+}
+
 .top-banner > p {
   text-align: center;
   font-size: 1.525rem;
   color: white;
+}
+
+@media (max-width: 39.9375em) {
+  .top-banner > p {
+    font-size: 1.125rem;
+  }
 }
 
 .container {
@@ -2065,6 +2084,12 @@ ul li {
   font-size: 3.5rem;
 }
 
+@media (max-width: 39.9375em) {
+  .container > div > h1 {
+    font-size: 1.525rem;
+  }
+}
+
 .container > div > h3 {
   margin-top: 20px;
   color: #5a5a5a;
@@ -2072,7 +2097,13 @@ ul li {
   font-size: 2.25rem;
 }
 
-.service-list {
+@media (max-width: 39.9375em) {
+  .container > div > h3 {
+    font-size: 1.125rem;
+  }
+}
+
+.service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2088,8 +2119,45 @@ ul li {
   padding: 20px;
 }
 
-.icon {
+@media (max-width: 39.9375em) {
+  .service {
+    width: 95vw;
+  }
+}
+
+.service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+@media (max-width: 39.9375em) {
+  .service-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.icon-container {
   padding: 0 10px;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #dbe442;
+  padding: 4px;
+}
+
+@media (max-width: 39.9375em) {
+  .icon {
+    font-size: 3rem;
+  }
 }
 
 .content {
@@ -2098,6 +2166,12 @@ ul li {
 
 .content h2 {
   margin-bottom: 10px;
+}
+
+@media (max-width: 39.9375em) {
+  .content h2 {
+    font-size: 1.125rem;
+  }
 }
 
 .service-card {
