@@ -76,7 +76,7 @@ const WordpressServices = () => {
           </div>
           <div className="service-list">
             <div className="icon-container">
-              <FaHandshake className="" />
+              <FaHandshake className="icon" />
             </div>
             <div className="content">
               <h2>We do more than just basic WordPress web design</h2>
