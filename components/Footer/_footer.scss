@@ -1,98 +1,114 @@
-.footer{
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  background-color: #212529;
-  overflow-x: hidden;
+.footer {
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    background: #111;
+    padding: 50px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include breakpoints-down(medium) {
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+    }
+    @include breakpoints-down(small) {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+    }
+    &_item {
+        width: 100%;
+        h2 {
+            position: relative;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 15px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h2:before {
+            content: " ";
+            bottom: -5px;
 
-  @include breakpoints-up(medium){
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include breakpoints-down(medium){
-    grid-template-columns: repeat(1, 1fr);
-  }
+            position: absolute;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: $button-color;
+        }
 
-
-  @include breakpoints-up(large){
-    grid-template-columns: repeat(3, 1fr);
-  }
-  &_item{
-    @include max-width;
-    padding: 3rem;
-
-    h2{
-      color: #b5b5b5;
-      font-size: 40px;
-      margin-bottom: 20px!important;
-      font-weight: 400;
-      line-height: 49px;
+        p {
+            max-width: 400px;
+            @include breakpoints-down(small) {
+                max-width: 100%;
+            }
+            color: #999;
+            text-align: justify;
+            font-size: 16px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
     }
 
-    p{
-      text-align: justify;
-      max-width: 400px;
-      color: #f5f5f5;
-      font-size: 16px;
+    &_list {
+        display: flex;
+        margin-top: 50px;
+        li {
+            a {
+                color: #fff;
+                margin-right: 20px;
+
+                :hover {
+                    background: $button-color;
+                }
+            }
+        }
+    }
+    &_input {
+        width: 359px;
+        height: 37px;
+        padding: 10px;
+        background: white;
+        border: 1px solid #ffffff;
+        outline: none;
+        color: black;
+        border-radius: 2px;
+
+        @include breakpoints-down(medium) {
+            width: 100%;
+        }
     }
 
-    @include breakpoints-down(medium){
-      width: 57%;
-      padding: 1%;
-    }
-  }
-  &_input{
-    width: 359px;
-    height: 37px;
-    padding: 10px;
-    background: white;
-    border: 1px solid #ffffff;
-    outline: none;
-    color: black;
-    border-radius: 2px;
+    &_info {
+        li {
+            cursor: pointer;
+            text-align: justify;
 
-    @include breakpoints-down(medium){
-      width: 100%;
-    }
-  }
-
-  &_link{
-    display: flex;
-
-    @include breakpoints-down(medium){
-      display: grid;
+            > p {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                svg {
+                    margin-right: 10px;
+                }
+            }
+            :hover {
+                color: white;
+            }
+        }
     }
 
-    &_items{
-      padding-left: 12px;
-      @include breakpoints-down(medium){
-        padding: 10px 0px;
-      }
+    &_link {
+        display: flex;
+
+        @include breakpoints-down(medium) {
+            display: grid;
+        }
+
+        &_items {
+            cursor: pointer;
+            > p {
+                margin-bottom: 10px;
+            }
+            :hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
     }
-  }
-}
-
-.btn{
-  width: 50%;
-  padding: 0.7rem 1rem;
-  background-color: #2ecc71;
-  color: #fff;
-  font-size: 1.1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: .3s;
-  text-transform: uppercase;
-
-
-  &:hover{
-    background-color: #27ae60;
-  }
-
-  @include breakpoints-down(medium){
-    width: 100%;
-  }
-
 }

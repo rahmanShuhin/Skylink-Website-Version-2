@@ -25,22 +25,18 @@ const Team = () => {
             img: dev,
         },
         {
-            name: "Shah Riad",
-            skill: "UI/UX Designer",
+            name: "Mifta Uddin Khan",
+            skill: "Web Developer",
             img: dev,
         },
         {
-            name: "Akhando",
-            skill: "UI/UX Designer",
+            name: "Rafi",
+            skill: "Web Developer",
             img: dev,
         },
+
         {
             name: "Arifur Rahman",
-            skill: "Content Writer",
-            img: dev,
-        },
-        {
-            name: "AR Raqeeb",
             skill: "Content Writer",
             img: dev,
         },
