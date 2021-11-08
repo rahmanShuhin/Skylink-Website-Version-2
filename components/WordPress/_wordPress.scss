@@ -84,12 +84,12 @@
   padding: 0 10px;
 }
 
-.icon{
+.icon {
   font-size: 2rem;
   color: #dbe442;
   padding: 4px;
   @include breakpoints-down(small) {
-   font-size: 3rem;
+    font-size: 3rem;
   }
 }
 

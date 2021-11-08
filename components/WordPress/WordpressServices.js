@@ -34,7 +34,7 @@ const WordpressServices = () => {
 
           <div className="service-list">
             <div className="icon-container">
-              <BsImages className='icon' />
+              <BsImages className="icon" />
             </div>
             <div className="content">
               <h2>Helping clients with WordPress web design services</h2>
@@ -56,7 +56,7 @@ const WordpressServices = () => {
           </div>
           <div className="service-list">
             <div className="icon-container">
-              <GiPencilRuler className='icon' />
+              <GiPencilRuler className="icon" />
             </div>
             <div className="content">
               <h2>What is WordPress website design?</h2>
@@ -76,7 +76,7 @@ const WordpressServices = () => {
           </div>
           <div className="service-list">
             <div className="icon-container">
-              <FaHandshake className='icon' />
+              <FaHandshake className="" />
             </div>
             <div className="content">
               <h2>We do more than just basic WordPress web design</h2>
