@@ -1,9 +1,24 @@
-.ui_approach {
-  // &_item {
-  //   margin-bottom: 0.5em;
-  // }
+.approach {
+  &_item {
+    @include breakpoints-down(medium) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px 10px 40px;
+      justify-content: center;
+      // grid-template-columns: 1fr;
+    }
+  }
+
   .card {
+    @include breakpoints-down(medium) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px 10px 40px;
+      justify-content: center;
+      // grid-template-columns: 1fr;
+    }
     margin: 15px;
+    border: none;
   }
 
   > div {

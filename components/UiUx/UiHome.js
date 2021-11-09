@@ -35,7 +35,7 @@ const UiHome = () => {
             <button>Start a Conversation</button>
           </div>
 
-          <div className="col-md-8 lottie">
+          <div className="col-md-8 lottie__file">
             <Lottie 
               options={defaultOptions}
               style={{ marginBottom: "150px" }}

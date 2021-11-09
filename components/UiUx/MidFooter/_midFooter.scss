@@ -4,14 +4,26 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+  @include breakpoints-down(medium) {
+    display: grid;
+    grid-template-columns: 1fr;
+    // font-size: 13px;
+    // text-align: justify;
+  }
 
   p {
+    @include breakpoints-down(medium) {
+      text-align: justify;
+    }
     border-left: 3px solid #4979ff;
     font-size: 17px;
     // font-weight: bold;
     color: white;
   }
   button {
+    @include breakpoints-down(medium) {
+      margin-top: 10px;
+    }
     align-items: center;
     background-clip: padding-box;
     background-color: #fa6400;

@@ -1,11 +1,4 @@
 .ui {
-  // background: rgb(34, 193, 195);
-  // background: linear-gradient(
-  //   0deg,
-  //   rgba(34, 193, 195, 1) 0%,
-  //   rgba(79, 40, 172, 1) 100%
-  // );
-
   position: relative;
   box-shadow: 0 12px 21px #7889b6;
   background-image: radial-gradient(
@@ -17,16 +10,23 @@
     #244dd2 91%
   );
   min-height: 100vh;
+
   &_design {
-    @include breakpoints-down(small) {
-      display: grid;
-      width: 20px;
-      height: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // padding: 200px 0px;
+    overflow-x: hidden;
+    @include breakpoints-down(medium) {
+      grid-template-columns: 1fr;
     }
+
     padding-top: 150px;
     display: flex;
 
     h1 {
+      @include breakpoints-down(medium) {
+        font-size: 30px;
+      }
       font-size: 50px;
       color: white;
     }
@@ -42,10 +42,6 @@
     button {
       @include button-basic();
     }
-    // .lottie {
-    //   height: 600px;
-    //   width: 600px;
-    // }
   }
 
   &_service {
@@ -54,32 +50,15 @@
     padding: 10px;
     // margin-bottom: 200px;
     h1 {
+      @include breakpoints-down(medium) {
+        margin-top: 10px;
+        font-size: 16px;
+      }
       font-weight: bold;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       margin-bottom: 50px;
       color: black;
-    }
-  }
-}
-
-// @media query...
-@media (max-width: 700px) {
-  .ui_design {
-    h1 {
-      font-size: 18px;
-    }
-    h4 {
-      font-size: 10px;
-      text-decoration: justify;
-    }
-  }
-  .ui {
-    .lottie {
-      width: 20px;
-      height: 20px;
-      margin-right: 50px;
-      margin-bottom: 20px;
     }
   }
 }
