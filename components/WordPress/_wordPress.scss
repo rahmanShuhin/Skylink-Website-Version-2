@@ -9,16 +9,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include breakpoints-down(small) {
+    padding-top: 30px;
+    height: 100vh;
+  }
   > h1 {
     text-align: center;
     font-size: $large-font;
     color: $white;
     padding: 10px;
+    @include breakpoints-down(small) {
+      font-size: $medium-font;
+    }
   }
   > p {
     text-align: center;
     font-size: $medium-font;
     color: $white;
+    @include breakpoints-down(small) {
+      font-size: $small-font;
+    }
   }
 }
 
@@ -33,26 +43,54 @@
       color: #5a5a5a;
       padding-top: 50px;
       font-size: 3.5rem;
+      @include breakpoints-down(small) {
+        font-size: $medium-font;
+      }
     }
     > h3 {
       margin-top: 20px;
       color: #5a5a5a;
       text-align: center;
       font-size: 2.25rem;
+      @include breakpoints-down(small) {
+        font-size: $small-font;
+      }
     }
   }
 }
 
-.service-list {
+.service {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   width: 50vw;
   padding: 20px;
+  @include breakpoints-down(small) {
+    width: 95vw;
+  }
 }
-.icon {
+
+.service-list {
+  display: flex;
+  padding: 10px;
+  @include breakpoints-down(small) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.icon-container {
   padding: 0 10px;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #dbe442;
+  padding: 4px;
+  @include breakpoints-down(small) {
+    font-size: 3rem;
+  }
 }
 
 .content {
@@ -61,6 +99,9 @@
 
 .content h2 {
   margin-bottom: 10px;
+  @include breakpoints-down(small) {
+    font-size: $small-font;
+  }
 }
 
 .service-card {
