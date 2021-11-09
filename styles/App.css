@@ -2245,7 +2245,9 @@ ul li {
 
 .ui_service h1 {
   font-weight: bold;
+
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
   margin-bottom: 50px;
   color: black;
 }
@@ -2394,7 +2396,9 @@ ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+
   font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   font-size: 16px;
   font-weight: 600;
   -webkit-box-pack: center;

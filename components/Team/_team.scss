@@ -1,5 +1,6 @@
 .team {
     padding: 10px 0px 50px 0px;
+
     &_head {
         @include max-width();
         h2 {
@@ -26,6 +27,7 @@
         @include breakpoints-up(medium) {
             display: flex;
             gap: 20px;
+
             flex-wrap: wrap;
         }
     }
