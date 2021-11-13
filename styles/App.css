@@ -29,6 +29,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul li {
@@ -53,6 +54,26 @@ ul li {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .hero {
   position: relative;
   -webkit-box-shadow: 0 12px 21px #7889b6;
@@ -66,7 +87,7 @@ ul li {
   bottom: 0%;
   right: 0%;
   width: 100%;
-  background-image: radial-gradient(circle 920px at center, #286dec 0, #286dec 24%, #2767e7 32%, #244dd2 66%, #244dd2 91%);
+  background: linear-gradient(45deg, #286dec, #244dd2);
   -webkit-box-shadow: 0 12px 21px #7889b6;
           box-shadow: 0 12px 21px #7889b6;
   z-index: -999;
@@ -95,7 +116,7 @@ ul li {
 
 @media (max-width: 39.9375em) {
   .hero__content {
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 130px 0px;
   }
 }
@@ -350,6 +371,7 @@ ul li {
 }
 
 .nav__right span ul li > a {
+  padding: 10px 15px;
   color: black;
   font-size: 18px;
   text-transform: capitalize;
@@ -473,6 +495,9 @@ ul li {
   .white__bg .nav__right span {
     color: black !important;
   }
+  .white__bg .nav__right a {
+    color: black !important;
+  }
 }
 
 @-webkit-keyframes ulMove {
@@ -535,7 +560,7 @@ ul li {
   text-transform: uppercase;
   margin: 50px 0px;
   padding: 20px 0px;
-  border-left: 5px solid #3250d3;
+  border-left: 5px solid #b95ce4;
   letter-spacing: 0.02em;
 }
 
@@ -545,7 +570,7 @@ ul li {
   background-color: #325add;
   color: white;
   z-index: -1;
-  background-image: radial-gradient(circle 212px at center, #0d90f7 0, #0d90f7 24%, #118af4 32%, #2e60e0 91%, #325add 100%);
+  background: linear-gradient(45deg, #b95ce4, #4f29c2);
 }
 
 .services__left__card::after {
@@ -557,7 +582,7 @@ ul li {
   height: 100%;
   background-color: #3250d3;
   z-index: -1;
-  background-image: radial-gradient(circle 212px at center, #0d90f7 0, #0d90f7 24%, #118af4 32%, #2e60e0 91%, #325add 100%);
+  background: linear-gradient(45deg, #b95ce4, #4f29c2);
   -webkit-transition: width 0.2s ease-in-out;
   transition: width 0.2s ease-in-out;
 }
@@ -576,7 +601,7 @@ ul li {
   right: 0px;
 }
 
-.services__right button {
+.services__right a {
   background-color: #ec4d29;
   color: white;
   padding: 15px 70px;
@@ -591,7 +616,7 @@ ul li {
   margin-top: 30px;
 }
 
-.services__right button:hover {
+.services__right a:hover {
   opacity: 0.8;
 }
 
@@ -767,7 +792,6 @@ ul li {
           box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
   padding: 5rem 1.875rem 5rem 2.5rem;
   color: #fff;
-  background-color: #ff784e;
   background-image: radial-gradient(circle 280px at center, #ff784e 0, #ff784e 24%, #ff764e 32%, #ff664e 91%, #ff644e 100%);
 }
 
@@ -928,6 +952,7 @@ ul li {
 
 .team_name {
   font-size: 20px !important;
+  margin-top: 20px;
 }
 
 @media (max-width: 64em) {
@@ -939,6 +964,12 @@ ul li {
 .contact {
   padding: 30px 0px;
   background-color: #e6f2ff;
+}
+
+@media (max-width: 64em) {
+  .contact {
+    padding: 10px 30px;
+  }
 }
 
 .contact_head h2 {
@@ -1014,7 +1045,7 @@ ul li {
 .field_btn {
   width: 100%;
   padding: 0.5rem 1rem;
-  background-color: #2ecc71;
+  background-color: #de5630;
   color: #fff;
   font-size: 1.1rem;
   border: none;
@@ -1025,7 +1056,7 @@ ul li {
 }
 
 .field_btn:hover {
-  background-color: #27ae60;
+  opacity: 0.7;
 }
 
 .footer {
@@ -1220,6 +1251,9 @@ ul li {
   display: -ms-grid;
   display: grid;
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
@@ -2254,9 +2288,7 @@ ul li {
 
 .ui_service h1 {
   font-weight: bold;
-
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-bottom: 50px;
   color: black;
 }
@@ -2323,7 +2355,7 @@ ul li {
   margin-top: 50px;
   font-size: 40px;
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .cardMedia {
@@ -2399,7 +2431,7 @@ ul li {
 .design_tool h1 {
   font-size: 40px;
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 64em) {
@@ -2487,9 +2519,7 @@ ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-
-  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   -webkit-box-pack: center;
@@ -2835,6 +2865,12 @@ ul li {
   background-color: #e6f2ff;
 }
 
+@media (max-width: 39.9375em) {
+  .ourWorks {
+    padding: 50px 0px;
+  }
+}
+
 .ourWorks > div {
   max-width: 1400px;
   margin: 0px auto;
@@ -2886,26 +2922,53 @@ ul li {
 
 @media (max-width: 64em) {
   .ourWorks > div > div:nth-of-type(2) {
-    gap: 10px;
+    gap: 30px;
   }
 }
 
-.ourWorks > div > div:nth-of-type(2) > div {
+.ourWorks > div > div:nth-of-type(2) a > div {
+  border-radius: 6px !important;
   background-color: white;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 6px;
+  position: relative;
+  z-index: 2;
 }
 
-.ourWorks > div > div:nth-of-type(2) > div img {
+.ourWorks > div > div:nth-of-type(2) a > div:hover::after {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.ourWorks > div > div:nth-of-type(2) a > div::after {
+  content: "";
+  position: absolute;
   width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 10%;
+  height: 100%;
+  background: linear-gradient(45deg, #b95ce4, #4f29c2);
 }
 
-.ourWorks > div > div:nth-of-type(2) > div > div {
-  padding: 10px 10px;
+.ourWorks > div > div:nth-of-type(2) a > div img {
+  width: 100%;
+  height: 260px;
+  margin: 0%;
 }
 
-.ourWorks > div > div:nth-of-type(2) > div > div p {
+.ourWorks > div > div:nth-of-type(2) a > div > div {
+  padding: 15px 10px;
+  background-color: white;
+  margin-top: -10px;
+}
+
+.ourWorks > div > div:nth-of-type(2) a > div > div p {
   font-weight: 500;
   font-size: 20px;
 }

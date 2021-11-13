@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Contact = () => {
   const [values, setValues] = useState({
-    name: '',
-    email: '',
-    number: '',
-    message: '',
+    name: "",
+    email: "",
+    number: "",
+    message: "",
   });
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,23 +13,31 @@ const Contact = () => {
     // e.target.reset()
   };
 
-
-
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact_head">
         <h2>LET'S GET TO WORK.</h2>
-        <p>Call Now to discuss your project:  +1 (480) 409-4019</p>
+        <p>Email us to discuss your project : contact@skylinkcreative.com</p>
       </div>
+
       <div className="contact_form">
         <div className="contact_body">
-          <form onSubmit={ handleSubmit }>
+          <form
+            action="https://formsubmit.co/contact@skylinkcreative.com"
+            method="POST"
+          >
             <input
               type="text"
               className="field"
               name="name"
               placeholder="Your Name"
             />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://www.skylinkcreative.com/"
+            />
+
             <input
               type="email"
               className="field"
@@ -41,6 +49,12 @@ const Contact = () => {
               className="field"
               name="number"
               placeholder="Your Phone"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thanks For Showing Interest On Us. We will Contact to you soon"
             />
             <textarea
               className="field field_area"

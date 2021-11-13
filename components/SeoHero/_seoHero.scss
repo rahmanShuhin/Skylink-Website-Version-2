@@ -1,99 +1,100 @@
 .seoHero {
-    background-image: radial-gradient(
-        circle 820px at center,
-        #5d5dec 0,
-        #5d5dec 24%,
-        #5b5be7 32%,
-        #4c4cc2 91%,
-        #4a4abc 100%
-    );
+  background-image: radial-gradient(
+    circle 820px at center,
+    #5d5dec 0,
+    #5d5dec 24%,
+    #5b5be7 32%,
+    #4c4cc2 91%,
+    #4a4abc 100%
+  );
 
-    min-height: 60vh;
+  min-height: 60vh;
+  > div {
+    @include max-width;
+    min-height: 70vh;
+    padding: 100px 0px;
+    @include breakpoints-down(medium) {
+      padding: 190px 0px 50px 0px;
+    }
+    @include breakpoints-down(small) {
+      padding: 150px 0px 150px 0px;
+    }
+    @include breakpoints-down(medium) {
+      svg {
+        width: 80vw !important;
+      }
+    }
+    @include breakpoints-down(small) {
+      svg {
+        display: none;
+      }
+    }
+
+    color: white;
+  }
+  > div:nth-of-type(1) {
+    display: grid;
+    text-align: left;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    @include breakpoints-down(medium) {
+      grid-template-columns: 1fr;
+    }
     > div {
-        @include max-width;
-        min-height: 70vh;
-        padding: 100px 0px;
+      p {
+        &:nth-of-type(1) {
+          color: $button-color;
+          font-weight: bold;
+          font-size: 18px;
+          letter-spacing: 1px;
+          line-height: 160%;
+        }
+        &:nth-of-type(2) {
+          max-width: 700px;
+          margin: 20px 0px;
+          font-size: 16px;
+        }
+      }
+      h1 {
+        font-size: 52px;
         @include breakpoints-down(medium) {
-            padding: 190px 0px 50px 0px;
+          font-size: 32px;
         }
-        @include breakpoints-down(small) {
-            padding: 150px 0px 150px 0px;
-        }
-        @include breakpoints-down(medium) {
-            svg {
-                width: 80vw !important;
-            }
-        }
-        @include breakpoints-down(small) {
-            svg {
-                display: none;
-            }
-        }
-
-        color: white;
+        letter-spacing: 1px;
+        line-height: 120%;
+      }
+      button {
+        @include button-basic();
+      }
     }
-    > div:nth-of-type(1) {
-        display: grid;
-        text-align: left;
-        grid-template-columns: 1fr 1fr;
-        @include breakpoints-down(medium) {
-            grid-template-columns: 1fr;
-        }
-        > div {
-            p {
-                &:nth-of-type(1) {
-                    color: $button-color;
-                    font-weight: bold;
-                    font-size: 18px;
-                    letter-spacing: 1px;
-                    line-height: 160%;
-                }
-                &:nth-of-type(2) {
-                    max-width: 700px;
-                    margin: 20px 0px;
-                    font-size: 16px;
-                }
-            }
-            h1 {
-                font-size: 52px;
-                @include breakpoints-down(medium) {
-                    font-size: 32px;
-                }
-                letter-spacing: 1px;
-                line-height: 120%;
-            }
-            button {
-                @include button-basic();
-            }
-        }
-    }
+  }
 }
 
 .seo__middle {
-    @include max-width;
-    padding: 120px 0px;
-    @include breakpoints-down(small) {
-        padding: 50px 0px;
+  @include max-width;
+  padding: 120px 0px;
+  @include breakpoints-down(small) {
+    padding: 50px 0px;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  @include breakpoints-down(medium) {
+    grid-template-columns: 1fr;
+  }
+  gap: 50px;
+  > div {
+    h4 {
+      font-size: 20px;
+      height: 50px;
     }
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    @include breakpoints-down(medium) {
-        grid-template-columns: 1fr;
+    p {
+      max-width: 380px;
+      color: black;
+      line-height: 190%;
     }
-    gap: 50px;
-    > div {
-        h4 {
-            font-size: 20px;
-            height: 50px;
-        }
-        p {
-            max-width: 380px;
-            color: black;
-            line-height: 190%;
-        }
-        .MuiSvgIcon-root {
-            font-size: 50px;
-            color: $button-color;
-        }
+    .MuiSvgIcon-root {
+      font-size: 50px;
+      color: $button-color;
     }
+  }
 }
