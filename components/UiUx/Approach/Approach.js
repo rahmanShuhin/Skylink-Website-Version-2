@@ -8,9 +8,9 @@ import * as React from "react";
 const Approach = () => {
   return (
     <div className="approach ">
-      <h1>Our approach</h1>
+      <h1 className="h1">Our approach</h1>
       <div className="approach_item ">
-        <Card sx={{ maxWidth: 345 }} className=" card col-md-4">
+        <Card sx={{ maxWidth: 345 }} className=" card1 col-md-4">
           <CardActionArea>
             <CardMedia
               className="cardMedia"
@@ -20,19 +20,19 @@ const Approach = () => {
               alt="green iguana"
             />
             <CardContent>
-              <Typography  gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="h5" component="div">
                 Discovery
               </Typography>
               <Typography variant="body2" className="paragraph">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
             </CardContent>
           </CardActionArea>
         </Card>
 
         {/* card 2 */}
-        <Card sx={{ maxWidth: 345 }} className=" card col-md-4">
+        <Card sx={{ maxWidth: 345 }} className=" card1 col-md-4">
           <CardActionArea>
             <CardMedia
               className="cardMedia"
@@ -46,16 +46,16 @@ const Approach = () => {
                 Prototype
               </Typography>
               <Typography variant="body2" className="paragraph">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
             </CardContent>
           </CardActionArea>
         </Card>
 
         {/* card 3 */}
 
-        <Card sx={{ maxWidth: 345 }} className=" card col-md-4">
+        <Card sx={{ maxWidth: 345 }} className=" card1 col-md-4">
           <CardActionArea>
             <CardMedia
               className="cardMedia"
@@ -69,9 +69,9 @@ const Approach = () => {
                 Delivery
               </Typography>
               <Typography variant="body2" className="paragraph">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
             </CardContent>
           </CardActionArea>
         </Card>

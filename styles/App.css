@@ -2216,20 +2216,11 @@ ul li {
   }
 }
 
-.ui {
-  position: relative;
+.ui_design {
   -webkit-box-shadow: 0 12px 21px #7889b6;
           box-shadow: 0 12px 21px #7889b6;
-  background-image: radial-gradient(circle 920px at center, #286dec 0, #286dec 24%, #2767e7 32%, #244dd2 66%, #244dd2 91%);
+  background: linear-gradient(45deg, #286dec, #244dd2);
   min-height: 100vh;
-}
-
-.ui_design {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  overflow-x: hidden;
   padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2259,11 +2250,17 @@ ul li {
   text-align: justify;
 }
 
+@media (max-width: 64em) {
+  .ui_design h4 {
+    font-size: 15px;
+  }
+}
+
 .ui_design > div {
   padding: 30px;
 }
 
-.ui_design button {
+.ui_design > div button {
   background-color: #ec4d29;
   color: white;
   padding: 15px 70px;
@@ -2277,64 +2274,15 @@ ul li {
   outline: none;
 }
 
-.ui_design button:hover {
+.ui_design > div button:hover {
   opacity: 0.8;
 }
 
-.ui_service {
-  text-align: center;
-  padding: 10px;
-}
-
-.ui_service h1 {
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-bottom: 50px;
-  color: black;
-}
-
-@media (max-width: 64em) {
-  .ui_service h1 {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 64em) {
-  .approach_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 20px 10px 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.approach .card {
+.approach .card1 {
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
   margin: 15px;
   border: none;
-}
-
-@media (max-width: 64em) {
-  .approach .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 10px 10px 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .approach > div {
@@ -2381,7 +2329,7 @@ ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 10px 10px 40px;
+    margin: 0 10px 20px 0px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2392,6 +2340,8 @@ ul li {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .designCard .card .paragraph {
@@ -2407,14 +2357,6 @@ ul li {
   color: white;
 }
 
-@media (max-width: 64em) {
-  .designCard .card:hover {
-    margin: 19px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .designCard .card:hover .paragraph:hover {
   color: #7ebdc6;
 }
@@ -2424,49 +2366,62 @@ ul li {
   margin-left: 80px;
 }
 
-.design_tool {
-  margin-top: 70px;
+@media (max-width: 64em) {
+  .approach_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 20px 30px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.design_tool h1 {
+.approach .card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  margin: 15px;
+  border: none;
+}
+
+.approach > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.approach > div img {
+  width: 100px;
+  height: 100px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+@media (max-width: 64em) {
+  .approach .h1 {
+    font-size: 25px;
+  }
+}
+
+.approach h1 {
+  margin-top: 50px;
   font-size: 40px;
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 64em) {
-  .design_tool h1 {
-    font-size: 30px;
-  }
+.cardMedia {
+  margin-left: 90px;
 }
 
-.design_tool > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 100px;
-}
-
-@media (max-width: 64em) {
-  .design_tool > div {
-    margin-right: 35px;
-  }
-}
-
-.design_tool > div img {
-  width: 100px;
-  height: 100px;
-}
-
-@media (max-width: 64em) {
-  .design_tool > div img {
-    width: 50px;
-    height: 50px;
-    margin-right: 35px;
-  }
+.typo {
+  text-align: center;
 }
 
 .mid_footer {
@@ -2990,5 +2945,25 @@ ul li {
 
 .ourWorks > div button:hover {
   opacity: 0.8;
+}
+
+.ui_service {
+  text-align: center;
+  padding: 10px;
+}
+
+.ui_service h1 {
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 50px;
+  color: black;
+}
+
+@media (max-width: 64em) {
+  .ui_service h1 {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #fa6400;
+  }
 }
 /*# sourceMappingURL=App.css.map */

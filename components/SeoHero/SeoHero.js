@@ -1,8 +1,8 @@
-import Lottie from "react-lottie";
-import * as animationData from "../../assets/lottie files/23613-animation-seo-traffic.json";
-import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AssessmentIcon from "@mui/icons-material/Assessment";
+import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
+import Lottie from "react-lottie";
+import * as animationData from "../../assets/lottie files/23613-animation-seo-traffic.json";
 import Contact from "../Contact/Contact";
 
 const SeoHero = () => {

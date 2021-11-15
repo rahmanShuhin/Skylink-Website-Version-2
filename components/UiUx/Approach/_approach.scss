@@ -1,52 +1,29 @@
 .approach {
-  &_item {
-    @include breakpoints-down(medium) {
-      display: flex;
-      flex-direction: column;
-      margin: 0 20px 10px 40px;
-      justify-content: center;
-      // grid-template-columns: 1fr;
-    }
-  }
-
-  .card {
-    @include breakpoints-down(medium) {
-      display: flex;
-      flex-direction: column;
-      margin: 0 10px 10px 40px;
-      justify-content: center;
-      // grid-template-columns: 1fr;
-    }
+  .card1 {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin: 15px;
     border: none;
   }
 
   > div {
-    // margin-left: 50px;
     display: flex;
-    // flex-grow: 4;
+
     img {
       width: 100px;
       height: 100px;
-      // padding: 20px;
+
       justify-content: right;
     }
-    // p {
-    //   font-size: 30px;
-    //   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    //   // color: #de5630;
-    // }
   }
   h1 {
     margin-top: 50px;
     font-size: 40px;
     text-align: center;
-    // margin-right: 710px;
+
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 }
 .cardMedia {
-  // width: 140px;
   margin-left: 110px;
 }

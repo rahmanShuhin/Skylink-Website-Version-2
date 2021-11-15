@@ -1,21 +1,10 @@
 .ui {
-  position: relative;
-  box-shadow: 0 12px 21px #7889b6;
-  background-image: radial-gradient(
-    circle 920px at center,
-    #286dec 0,
-    #286dec 24%,
-    #2767e7 32%,
-    #244dd2 66%,
-    #244dd2 91%
-  );
-  min-height: 100vh;
-
   &_design {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // padding: 200px 0px;
-    overflow-x: hidden;
+    box-shadow: 0 12px 21px #7889b6;
+    background: linear-gradient(45deg, #286dec, #244dd2);
+
+    min-height: 100vh;
+
     @include breakpoints-down(medium) {
       grid-template-columns: 1fr;
     }
@@ -32,33 +21,19 @@
     }
 
     h4 {
+      @include breakpoints-down(medium) {
+        font-size: 15px;
+      }
       color: #d8d4e2;
       text-align: justify;
     }
 
     > div {
       padding: 30px;
-    }
-    button {
-      @include button-basic();
-    }
-  }
 
-  &_service {
-    text-align: center;
-
-    padding: 10px;
-    // margin-bottom: 200px;
-    h1 {
-      @include breakpoints-down(medium) {
-        margin-top: 10px;
-        font-size: 16px;
+      button {
+        @include button-basic();
       }
-      font-weight: bold;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      margin-bottom: 50px;
-      color: black;
     }
   }
 }

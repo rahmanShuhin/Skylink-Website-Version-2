@@ -7,8 +7,6 @@
   @include breakpoints-down(medium) {
     display: grid;
     grid-template-columns: 1fr;
-    // font-size: 13px;
-    // text-align: justify;
   }
 
   p {
@@ -17,7 +15,7 @@
     }
     border-left: 3px solid #4979ff;
     font-size: 17px;
-    // font-weight: bold;
+
     color: white;
   }
   button {

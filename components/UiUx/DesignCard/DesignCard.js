@@ -8,6 +8,7 @@ import * as React from "react";
 const DesignCard = () => {
   return (
     <div className="designCard">
+      
       <Card sx={{ maxWidth: 280 }} className=" card col-md-3">
         <CardActionArea>
           <CardMedia

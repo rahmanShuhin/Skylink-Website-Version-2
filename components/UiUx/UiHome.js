@@ -1,9 +1,7 @@
 import Lottie from "react-lottie";
 import * as animationData from "../../assets/lottie files/74387-uiux.json";
-import Approach from "./Approach/Approach";
-import DesignCard from "./DesignCard/DesignCard";
-import DesignTool from "./DesignTool/DesignTool";
-import MidFooter from "./MidFooter/MidFooter";
+import Works from "./Works/Works";
+
 // import DesignCard from './DesignCard';
 const UiHome = () => {
   const defaultOptions = {
@@ -20,9 +18,7 @@ const UiHome = () => {
       <div className="ui">
         <div className="ui_design">
           <div className="col-md-4">
-            <h1>
-              UI AND UX DESIGN SERVICES
-            </h1>
+            <h1>UI AND UX DESIGN SERVICES</h1>
             <br />
             <h4>
               Want to build your product with a team that establishes a clear
@@ -31,12 +27,12 @@ const UiHome = () => {
               team is a small design studio within a large software company that
               will help you build an engaging product easily and quickly.
             </h4>
-            <br />
-            <button>Start a Conversation</button>
+            <br/>
+            <button className='btn'>Hire Us</button>
           </div>
 
           <div className="col-md-8 lottie__file">
-            <Lottie 
+            <Lottie
               options={defaultOptions}
               style={{ marginBottom: "150px" }}
               height={550}
@@ -44,18 +40,10 @@ const UiHome = () => {
             />
           </div>
         </div>
-      </div>
-      <div className="ui_service">
-        <h1>OUR UI AND UX DESIGN SERVICES AND CAPABILITIES</h1>
-        <div className="design">
-          <DesignCard />
 
-          <MidFooter />
-
-          <DesignTool />
-
-          <Approach />
-        </div>
+        {/* Design add */}
+        
+        <Works />
       </div>
     </>
   );
