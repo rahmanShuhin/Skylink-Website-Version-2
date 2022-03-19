@@ -18,16 +18,7 @@ const Landing = () => {
       <div className="hero__content">
         <div>
           <h2>
-            Grow your business with{" "}
-            <span
-              style={{
-                color: "#de5630",
-                padding: "10px",
-                fontStyle: "italic",
-              }}
-            >
-              SKYLINK CREATIVE
-            </span>{" "}
+            Grow your business with <span>Skylink Creative</span>{" "}
           </h2>
           <p>
             It's time to take your business global. Marketing is not one size

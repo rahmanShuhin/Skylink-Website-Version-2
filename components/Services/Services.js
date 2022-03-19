@@ -15,6 +15,7 @@ const Services = () => {
   };
   return (
     <div className="services">
+      <p>What We Offer</p>
       <h2>Services</h2>
       <div className="services__for__big__screen">
         <div className="services__left">

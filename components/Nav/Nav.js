@@ -29,12 +29,13 @@ const Nav = () => {
         <div className="nav__left">
           <Link href="/">
             {top ? (
-              <Image
-                src={white_logo}
-                alt="SkyLink Creative"
-                width={150}
-                height={50}
-              />
+              // <Image
+              //   src={white_logo}
+              //   alt="SkyLink Creative"
+              //   width={150}
+              //   height={50}
+              // />
+              <h2>SkyLink Creative</h2>
             ) : (
               <h2>SkyLink Creative</h2>
             )}

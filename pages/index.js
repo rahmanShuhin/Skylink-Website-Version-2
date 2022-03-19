@@ -24,10 +24,10 @@ export default function Home() {
 
       <main>
         <Landing></Landing>
-        <About></About>
+        {/* <About></About> */}
         <Services></Services>
         <OurWorks></OurWorks>
-        <Team></Team>
+        {/* <Team></Team> */}
         <Contact></Contact>
       </main>
     </div>

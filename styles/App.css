@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500;700&display=swap");
 html {
@@ -20,7 +20,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -76,8 +76,6 @@ ul li {
 
 .hero {
   position: relative;
-  -webkit-box-shadow: 0 12px 21px #7889b6;
-          box-shadow: 0 12px 21px #7889b6;
 }
 
 .hero #tsparticles {
@@ -87,16 +85,13 @@ ul li {
   bottom: 0%;
   right: 0%;
   width: 100%;
-  background: linear-gradient(45deg, #286dec, #244dd2);
-  -webkit-box-shadow: 0 12px 21px #7889b6;
-          box-shadow: 0 12px 21px #7889b6;
   z-index: -999;
 }
 
 .hero__content {
   padding: 10px;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -144,9 +139,11 @@ ul li {
 
 .hero__content > div:nth-of-type(1) > h2 {
   font-weight: 900;
-  font-size: 50px;
-  text-transform: uppercase;
-  color: white;
+  font-size: 60px;
+  text-transform: capitalize;
+  background: -webkit-linear-gradient(#0069c0, #de5630);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 2px;
   z-index: -1;
 }
@@ -159,10 +156,9 @@ ul li {
 
 .hero__content > div:nth-of-type(1) > p {
   max-width: 600px;
-  color: white;
-  font-family: Open Sans, sans-serif;
+  color: black;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.7em;
   word-spacing: 1px;
   text-align: justify;
@@ -170,7 +166,8 @@ ul li {
 }
 
 .hero__content > div:nth-of-type(1) > button {
-  background-color: #ec4d29;
+  background: -webkit-gradient(linear, left top, right top, from(#de5630), to(#eb780d));
+  background: linear-gradient(to right, #de5630 0%, #eb780d 100%);
   color: white;
   padding: 15px 70px;
   border: none;
@@ -234,7 +231,7 @@ ul li {
 }
 
 .nav__left > a {
-  color: white;
+  color: #0069c0;
   font-weight: 700;
   font-size: 1.525rem;
 }
@@ -275,10 +272,10 @@ ul li {
 
 .nav__right > a,
 .nav__right span {
-  color: white;
-  margin-left: 70px;
-  font-size: 22px;
-  font-weight: 300;
+  color: black;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 500;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,7 +522,7 @@ ul li {
 .services {
   max-width: 1400px;
   margin: 0px auto;
-  padding: 150px 0px;
+  padding-bottom: 150px;
   position: relative;
 }
 
@@ -536,13 +533,18 @@ ul li {
 }
 
 .services h2 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 36px;
   letter-spacing: 0.02em;
   color: #1b2935;
   font-weight: 700;
-  text-transform: uppercase;
+  text-align: center;
   line-height: 1.2em;
+  margin-bottom: 50px;
+}
+
+.services p {
+  text-align: center;
 }
 
 .services__left__card {
@@ -602,7 +604,8 @@ ul li {
 }
 
 .services__right a {
-  background-color: #ec4d29;
+  background: -webkit-gradient(linear, left top, right top, from(#de5630), to(#eb780d));
+  background: linear-gradient(to right, #de5630 0%, #eb780d 100%);
   color: white;
   padding: 15px 70px;
   border: none;
@@ -1292,7 +1295,8 @@ ul li {
 }
 
 .seoHero > div:nth-of-type(1) > div button {
-  background-color: #ec4d29;
+  background: -webkit-gradient(linear, left top, right top, from(#de5630), to(#eb780d));
+  background: linear-gradient(to right, #de5630 0%, #eb780d 100%);
   color: white;
   padding: 15px 70px;
   border: none;
@@ -1412,7 +1416,8 @@ ul li {
 }
 
 .affiliate > div:nth-of-type(1) > div button {
-  background-color: #ec4d29;
+  background: -webkit-gradient(linear, left top, right top, from(#de5630), to(#eb780d));
+  background: linear-gradient(to right, #de5630 0%, #eb780d 100%);
   color: white;
   padding: 15px 70px;
   border: none;
@@ -1657,7 +1662,8 @@ ul li {
 }
 
 .affiliate > div:nth-of-type(1) > div button {
-  background-color: #ec4d29;
+  background: -webkit-gradient(linear, left top, right top, from(#de5630), to(#eb780d));
+  background: linear-gradient(to right, #de5630 0%, #eb780d 100%);
   color: white;
   padding: 15px 70px;
   border: none;
@@ -1994,7 +2000,8 @@ ul li {
 }
 
 .webDev > div:nth-of-type(1) > div button {
-  background-color: #ec4d29;
+  background: -webkit-gradient(linear, left top, right top, from(#de5630), to(#eb780d));
+  background: linear-gradient(to right, #de5630 0%, #eb780d 100%);
   color: white;
   padding: 15px 70px;
   border: none;
@@ -2264,7 +2271,8 @@ ul li {
 }
 
 .ui_design button {
-  background-color: #ec4d29;
+  background: -webkit-gradient(linear, left top, right top, from(#de5630), to(#eb780d));
+  background: linear-gradient(to right, #de5630 0%, #eb780d 100%);
   color: white;
   padding: 15px 70px;
   border: none;
@@ -2900,7 +2908,7 @@ ul li {
   font-size: 36px;
   letter-spacing: 0.02em;
   color: #1b2935;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 50px;
   text-align: left;
 }
@@ -2974,7 +2982,8 @@ ul li {
 }
 
 .ourWorks > div button {
-  background-color: #ec4d29;
+  background: -webkit-gradient(linear, left top, right top, from(#de5630), to(#eb780d));
+  background: linear-gradient(to right, #de5630 0%, #eb780d 100%);
   color: white;
   padding: 15px 70px;
   border: none;
